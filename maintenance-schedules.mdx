@@ -1,7 +1,7 @@
 ---
-title: "HVAC Maintenance Frequency and Schedule Reference"
+title: "HVAC Preventive Maintenance Frequency and Schedule Reference"
 sidebarTitle: "Schedules"
-description: "Complete HVAC maintenance schedule reference covering daily, weekly, monthly, quarterly, and annual task intervals for all major equipment types."
+description: "HVAC maintenance schedule: daily, weekly, monthly, quarterly, and annual task intervals for chillers, AHUs, packaged units, and refrigeration systems."
 ---
 
 Adhering to manufacturer-recommended and industry-standard maintenance intervals is the foundation of any effective PM program. Skipping or delaying service tasks compounds wear, reduces efficiency, and increases the probability of a costly unplanned failure. Use the tables and interval tabs below as your master reference when building work orders, planning technician time, and ordering parts. Always cross-reference these intervals against your OEM documentation — some equipment carries tighter requirements based on operating hours, environmental conditions, or refrigerant type.
@@ -17,7 +17,7 @@ The table below summarizes task frequency across all covered equipment types. Us
 | Equipment Type | Daily | Weekly | Monthly | Quarterly | Annual |
 |---|---|---|---|---|---|
 | Chiller System | Log operating parameters | — | Inspect oil level & refrigerant sight glass | Oil analysis, tube inspection, purge unit service | Full tube brush, compressor overhaul check, leak test |
-| Air Handling Unit | Check filter differential pressure | Inspect belt tension | Replace filters (or per ΔP), clean drain pan | Coil cleaning, belt replacement, bearing lubrication | Full coil chemical clean, actuator calibration, damper service |
+| Air Handling Unit | Check filter differential pressure | Inspect belt tension | Replace filters (or per delta-P), clean drain pan | Coil cleaning, belt replacement, bearing lubrication | Full coil chemical clean, actuator calibration, damper service |
 | DX Split AC | — | Check condensate drain | Clean indoor filters, inspect outdoor coil | Refrigerant leak check, capacitor test, coil clean | Full refrigerant charge verify, compressor amp draw, control calibration |
 | Packaged AC (RTU) | — | Inspect economizer dampers | Check drain pan, lubricate fan bearings | Clean condenser coils, inspect heat exchanger | Gas valve test, full refrigerant circuit check, controls calibration |
 | Refrigeration Plant | Log suction/discharge pressures & temperatures | Inspect oil separator sight glass | Check defrost cycles, inspect door gaskets | Replace filter-driers, check safety controls | Compressor valve inspection, oil change, full leak test |
@@ -69,6 +69,57 @@ The table below summarizes task frequency across all covered equipment types. Us
     | Listen for abnormal noise or vibration | No rattling, knocking, or squealing |
   </Tab>
 
+  <Tab title="Weekly">
+    Weekly tasks add hands-on visual inspections to your daily log checks. They typically take 30–60 minutes per system and help you catch slow-developing issues such as belt wear, water chemistry drift, and condensate blockages before they cause failures.
+
+    ### Chiller System
+    | Task | Notes |
+    |---|---|
+    | Inspect condenser water strainer for debris | Clean basket if pressure drop across strainer is elevated |
+    | Check cooling tower basin level and make-up water valve | Low level indicates float valve failure or excess bleed-off |
+    | Visually inspect refrigerant piping and joints for oil traces | Oil staining indicates refrigerant leak — log and schedule repair |
+    | Review chiller controller fault log for intermittent alarms | Intermittent faults often precede chronic failures |
+
+    ### Air Handling Unit
+    | Task | Notes |
+    |---|---|
+    | Inspect fan drive belt tension and condition | Re-tension if deflection exceeds OEM spec; replace frayed or glazed belts |
+    | Check economizer damper position matches control signal | Stuck dampers waste energy and compromise indoor air quality |
+    | Visually inspect coil faces for visible debris or fouling | Schedule coil cleaning if airflow is visibly restricted |
+
+    ### DX Split AC
+    | Task | Notes |
+    |---|---|
+    | Check condensate drain pan for standing water | Standing water indicates a blocked drain — clear immediately |
+    | Inspect outdoor unit for debris accumulation around coil | Clear leaves, grass clippings, and dirt from all four coil faces |
+    | Verify thermostat setpoint and operating mode | Confirm settings match the building schedule |
+
+    ### Packaged AC (RTU)
+    | Task | Notes |
+    |---|---|
+    | Inspect economizer damper blades and actuator linkage | Confirm free travel; look for bent or disconnected linkage rods |
+    | Check roof curb flashing and unit base for water ingress | Water inside the unit cabinet damages electrical components |
+
+    ### Refrigeration Plant
+    | Task | Notes |
+    |---|---|
+    | Inspect oil separator sight glass level | Low oil level may indicate oil logging in evaporators — investigate |
+    | Check all case and cold room temperatures against setpoint | Off-setpoint readings indicate defrost, door seal, or refrigerant issues |
+    | Listen for abnormal compressor noise during operation | Knocking, squealing, or rattling warrants immediate investigation |
+
+    ### Condenser (Evaporative)
+    | Task | Notes |
+    |---|---|
+    | Inspect spray nozzles for blockage or misalignment | Clean blocked nozzles; replace cracked nozzles immediately |
+    | Check fan blade condition and set screw tightness | Tighten loose set screws; replace cracked or bent blades |
+
+    ### Compressor
+    | Task | Notes |
+    |---|---|
+    | Check compressor oil level in sight glass | Half-glass or above; discolored or foamy oil requires investigation |
+    | Listen for abnormal mechanical noise | Knocking or squealing indicates internal wear — log and investigate |
+  </Tab>
+
   <Tab title="Monthly">
     Monthly tasks combine observations with hands-on inspection and minor servicing. Budget 1–4 hours per major system depending on size and accessibility.
 
@@ -81,7 +132,7 @@ The table below summarizes task frequency across all covered equipment types. Us
     | Test chilled water flow switch operation | Manually interrupt flow; confirm compressor trips |
     | Inspect purge unit operation log (centrifugal chillers) | High purge frequency indicates refrigerant leak or air infiltration |
     | Check control panel for loose terminal connections | Torque to OEM spec; look for signs of heat damage |
-    | Verify BMS setpoints and control sequence | Compare BMS readings to local gauges; recalibrate if >2°F drift |
+    | Verify BMS setpoints and control sequence | Compare BMS readings to local gauges; recalibrate if deviation exceeds 2°F |
 
     ### Air Handling Unit
     | Task | Notes |
@@ -139,6 +190,61 @@ The table below summarizes task frequency across all covered equipment types. Us
     | Inspect all suction and discharge service valve packing | Replace leaking packing; ensure valve is fully front-seated during operation |
     | Verify unloader operation (reciprocating compressors) | Confirm capacity reduction steps function on command |
     | Check coupling or belt condition (open-drive compressors) | Inspect for cracking, fraying, or glazing |
+  </Tab>
+
+  <Tab title="Quarterly">
+    Quarterly tasks go deeper than monthly checks and are best scheduled during shoulder seasons when cooling and heating loads are lower. Allow 2–6 hours per major system.
+
+    ### Chiller System
+    | Task | Notes |
+    |---|---|
+    | Send oil sample to laboratory for analysis | Check for wear metals, moisture, acid number, and viscosity; use results to guide oil change decisions |
+    | Inspect evaporator and condenser tube ends for fouling | Use a bore scope or flashlight; high fouling warrants early tube brushing |
+    | Service purge unit (centrifugal chillers) | Check purge compressor operation; replace filter and drier if purge rate has increased |
+    | Inspect and tighten all control panel electrical connections | Torque to OEM spec; look for heat-damaged insulation or discolored terminals |
+
+    ### Air Handling Unit
+    | Task | Notes |
+    |---|---|
+    | Clean heating and cooling coil faces (compressed air or low-pressure water) | Schedule full chemical clean if differential pressure has increased by more than 20% |
+    | Replace fan drive belts if wear is visible | Do not wait for Annual service if cracking or glazing is observed |
+    | Re-grease fan bearings per OEM interval | Use correct grease type and quantity; do not over-grease sealed bearings |
+    | Calibrate damper actuators (outside air, return air, exhaust) | Verify full stroke; adjust linkage or replace actuator if stroke is limited |
+
+    ### DX Split AC
+    | Task | Notes |
+    |---|---|
+    | Perform refrigerant leak check on all joints and fittings | Use calibrated electronic leak detector; log all findings |
+    | Test start and run capacitors with a capacitor meter | Replace any capacitor reading more than 10% below labeled µF value |
+    | Clean outdoor coil with low-pressure water and coil cleaner | Rinse from inside out; do not bend fins |
+
+    ### Water/Air-Cooled Packaged AC (RTU)
+    | Task | Notes |
+    |---|---|
+    | Clean condenser coils with low-pressure water and coil cleaner | Inspect fin condition; straighten damaged fins with a fin comb |
+    | Inspect heat exchanger for cracks or corrosion (gas units) | Cracked heat exchangers allow combustion gases into the airstream — replace immediately |
+    | Check all safety controls: high-pressure cutout, low-pressure cutout, freeze stat | Test each cutout; document setpoints and trip values |
+
+    ### Refrigeration Plant
+    | Task | Notes |
+    |---|---|
+    | Replace suction line filter-driers if pressure drop has increased | High pressure drop indicates a saturated or blocked drier — replace before it restricts flow |
+    | Calibrate high-pressure, low-pressure, and oil pressure safety cutouts | Test each cutout at its setpoint; document results |
+    | Inspect evaporator fan motors for noise or vibration | Re-grease or replace bearings if noise is detected |
+
+    ### Condenser
+    | Task | Notes |
+    |---|---|
+    | Descale evaporative condenser coils with chemical descalant | Follow manufacturer dilution ratios; neutralize and rinse thoroughly |
+    | Inspect drift eliminator pads for blockage or deformation | Clean or replace damaged eliminators |
+    | Inspect basin for sediment accumulation and corrosion | Remove sediment; treat corroded areas with rust inhibitor |
+
+    ### Compressor
+    | Task | Notes |
+    |---|---|
+    | Change oil filter and top up compressor oil | Use OEM-specified oil grade; document oil quantity added |
+    | Check unloader valve operation (reciprocating compressors) | Confirm capacity reduction steps respond correctly to demand signal |
+    | Perform vibration reading and compare to previous baseline | Rising vibration trend indicates developing bearing or balance fault |
   </Tab>
 
   <Tab title="Annual">
@@ -212,7 +318,7 @@ The table below summarizes task frequency across all covered equipment types. Us
     | Task | Notes |
     |---|---|
     | Descale evaporative condenser coils with chemical descalant | Follow chemical manufacturer dilution ratios; neutralize and rinse |
-    | Replace drift eliminators if damaged or deformed | Eliminators prevent Legionella-laden water droplets escaping |
+    | Replace drift eliminators if damaged or deformed | Eliminators prevent Legionella-laden water droplets from escaping |
     | Inspect and clean basin with biocide disinfection | Full Legionella risk management clean-down per local regulation |
     | Replace fan bearings or re-grease and inspect per vibration data | Document bearing condition; replace if vibration or noise is elevated |
     | Inspect motor windings with megger | Investigate readings below 1 MΩ |

@@ -1,7 +1,7 @@
 ---
 title: "HVAC Monthly Preventive Maintenance Checklist"
 sidebarTitle: "Monthly Checklist"
-description: "Complete monthly HVAC maintenance tasks covering thorough inspections, cleaning, and component checks for all major plant equipment types."
+description: "Monthly HVAC maintenance tasks covering hands-on cleaning, mechanical inspection, and performance checks for all eight major plant equipment types."
 ---
 
 Monthly preventive maintenance goes beyond the quick instrument rounds of your daily checks. These visits involve hands-on cleaning, mechanical inspection, and performance verification tasks that typically require 2 to 4 hours per equipment type depending on plant complexity. Completing monthly PM consistently extends equipment life, maintains efficiency, and reduces the likelihood of unplanned breakdowns between quarterly or annual service visits.
@@ -20,7 +20,7 @@ Monthly preventive maintenance goes beyond the quick instrument rounds of your d
     - [ ] Record and compare chiller efficiency (kW/TR or COP) against baseline commissioning data
     - [ ] Inspect and test all safety cut-outs: high-pressure switch, low-pressure switch, oil pressure differential switch, and motor overloads
     - [ ] Clean condenser water strainer basket and check strainer housing O-ring condition
-    - [ ] Inspect chilled water expansion vessel pre-charge pressure (compare to system static head; recharge if < 0.5 bar of design)
+    - [ ] Inspect chilled water expansion vessel pre-charge pressure (compare to system static head; recharge if below 0.5 bar of design)
     - [ ] Check anti-vibration mounts and spring isolators on chiller and pumps for deterioration or compression set
     - [ ] Inspect all control wiring in the chiller panel; check for chafe marks, loose terminals, or signs of overheating
     - [ ] Review BMS trend data for the past month; identify any exceedances of temperature, pressure, or amp draw limits
@@ -59,15 +59,29 @@ Monthly preventive maintenance goes beyond the quick instrument rounds of your d
     - [ ] Verify system achieves set point within 15 minutes of start-up from ambient temperature
   </Tab>
 
-  <Tab title="Package AC (Water/Air-Cooled)">
+  <Tab title="Water-Cooled Package AC">
     **Estimated visit time: 2–3 hours per unit**
 
     - [ ] Inspect and clean supply air filters; record differential pressure before and after filter service
     - [ ] Clean evaporator coil with low-pressure water spray or approved no-rinse coil cleaner; inspect for corrosion
     - [ ] Inspect and clean condensate drain pan; flush drain pipework with biocide; confirm drainage rate
     - [ ] Check and record refrigerant operating pressures on all circuits; compare to expected values for refrigerant type and load
-    - [ ] For water-cooled units: inspect condenser water connections and record entering/leaving temperatures; clean strainer basket
-    - [ ] For air-cooled units: inspect condenser coil face, clean fins, and verify condenser fan operation
+    - [ ] Inspect condenser water connections; record entering and leaving temperatures (expected ΔT: 4–6 °C); clean strainer basket
+    - [ ] Check compressor oil level (sight glass) and oil condition (colour, clarity); record findings
+    - [ ] Inspect all electrical connections in control panel; check contactor contacts for pitting or burning
+    - [ ] Test capacity control stages (hot-gas bypass, unloader, VFD) through BMS demand signals
+    - [ ] Check and test all safety devices: high-pressure cut-out, low-pressure cut-out, condenser water flow switch, and phase-failure relay
+  </Tab>
+
+  <Tab title="Air-Cooled Package AC">
+    **Estimated visit time: 2–3 hours per unit**
+
+    - [ ] Inspect and clean supply air filters; record differential pressure before and after filter service
+    - [ ] Clean evaporator coil with low-pressure compressed air or approved no-rinse coil cleaner; inspect for corrosion
+    - [ ] Inspect and clean condensate drain pan; flush drain pipework with biocide; confirm drainage rate
+    - [ ] Check and record refrigerant operating pressures on all circuits; compare to expected values for refrigerant type and load
+    - [ ] Inspect air-cooled condenser coil face; remove debris, straighten bent fins with fin comb, verify airflow is unobstructed
+    - [ ] Confirm condenser fan(s) are operating; check for unusual vibration, noise, or blade damage
     - [ ] Check compressor oil level (sight glass) and oil condition (colour, clarity); record findings
     - [ ] Inspect all electrical connections in control panel; check contactor contacts for pitting or burning
     - [ ] Test capacity control stages (hot-gas bypass, unloader, VFD) through BMS demand signals
@@ -97,7 +111,7 @@ Monthly preventive maintenance goes beyond the quick instrument rounds of your d
     **Condenser Tasks**
 
     - [ ] Clean air-cooled condenser coil — blow out fins with compressed air (always blow in opposite direction to airflow); straighten damaged fins
-    - [ ] Inspect condenser fan motors: check for moisture ingress, measure motor winding resistance (should be > 1 MΩ to earth)
+    - [ ] Inspect condenser fan motors: check for moisture ingress, measure motor winding resistance (should be above 1 MΩ to earth)
     - [ ] Check condenser fan blade tip clearance and confirm blades are secure on motor shaft
     - [ ] For evaporative/water-cooled condensers: test water treatment dosing levels (biocide, corrosion inhibitor, scale inhibitor); record results
     - [ ] Clean cooling tower or evaporative condenser basin, sump, and spray nozzles

@@ -1,7 +1,7 @@
 ---
-title: "Air Handling Unit (AHU) Preventive Maintenance"
+title: "AHU Preventive Maintenance: Filters, Coils, and Controls"
 sidebarTitle: "AHU"
-description: "Step-by-step AHU preventive maintenance procedures covering filters, coils, drain pans, fans, dampers, and BMS controls across monthly, quarterly, and annual schedules."
+description: "Monthly, quarterly, and annual AHU maintenance procedures covering filters, coils, drain pans, fans, dampers, and building management system controls."
 ---
 
 Air handling units form the backbone of any central HVAC system, conditioning and distributing air throughout a building by integrating a supply fan, filtration section, heating and cooling coils, dampers, and often a humidifier into a single assembly. Two primary configurations exist: **draw-through** units, where the fan draws air across the coil before discharging it, and **blow-through** units, where the fan pushes air through the coil. AHUs also vary in scale — central units serve entire buildings from a single plant room, while modular units are factory-assembled in bolt-together sections that can be configured for specific applications. Regardless of type, a structured preventive maintenance programme is essential to sustain air quality, energy efficiency, and equipment longevity.
@@ -28,7 +28,7 @@ Air handling units form the backbone of any central HVAC system, conditioning an
       </Step>
 
       <Step title="Verify Supply, Return, and Mixed Air Temperatures">
-        Using the BMS trend data or a calibrated thermometer, record the **outside air (OA)**, **return air (RA)**, and **mixed air (MA)** temperatures at the mixing box. Calculate the theoretical mixed air temperature using the OA and RA fractions:
+        Using the building management system (BMS) trend data or a calibrated thermometer, record the **outside air (OA)**, **return air (RA)**, and **mixed air (MA)** temperatures at the mixing box. Calculate the theoretical mixed air temperature using the OA and RA fractions:
 
         > **MA temp = (OA% × OA temp) + (RA% × RA temp)**
 
@@ -149,7 +149,7 @@ Air handling units form the backbone of any central HVAC system, conditioning an
 
       <Step title="Check Economizer Controls and CO₂ Sensor Calibration">
         Verify the economizer (free-cooling) logic is operating correctly:
-        - Confirm the BMS enables free cooling when OA conditions are favourable (typically OA enthalpy < RA enthalpy, or OA temp < 18°C depending on strategy).
+        - Confirm the BMS enables free cooling when OA conditions are favourable (typically OA enthalpy lower than RA enthalpy, or OA temp below 18°C depending on strategy).
         - Calibrate CO₂ sensors using a certified reference gas kit. Zero the sensor in fresh outdoor air and span-calibrate against a 1000 ppm or 2000 ppm reference gas as applicable. A sensor that drifts high will over-ventilate; one that drifts low will under-ventilate, allowing CO₂ build-up above ASHRAE 62.1 / CIBSE TM21 recommendations.
       </Step>
 
