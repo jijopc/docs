@@ -1,0 +1,258 @@
+---
+title: "Air Handling Unit (AHU) Preventive Maintenance"
+sidebarTitle: "AHU"
+description: "Step-by-step AHU preventive maintenance procedures covering filters, coils, drain pans, fans, dampers, and BMS controls across monthly, quarterly, and annual schedules."
+---
+
+Air handling units form the backbone of any central HVAC system, conditioning and distributing air throughout a building by integrating a supply fan, filtration section, heating and cooling coils, dampers, and often a humidifier into a single assembly. Two primary configurations exist: **draw-through** units, where the fan draws air across the coil before discharging it, and **blow-through** units, where the fan pushes air through the coil. AHUs also vary in scale — central units serve entire buildings from a single plant room, while modular units are factory-assembled in bolt-together sections that can be configured for specific applications. Regardless of type, a structured preventive maintenance programme is essential to sustain air quality, energy efficiency, and equipment longevity.
+
+<Warning>
+  **Legionella Risk — Drain Pan.** Standing water in the AHU drain pan is a confirmed Legionella proliferation site. Never allow water to pool in the drain pan between service visits. Ensure the condensate drain trap is correctly sized, primed, and free of blockages at every maintenance visit. If standing water is found, treat the pan with an approved biocide immediately, document the finding, and notify your water hygiene responsible person before restarting the unit.
+</Warning>
+
+## Maintenance Schedule
+
+<Tabs>
+  <Tab title="Monthly">
+    Carry out the following checks every month. Record all readings in the unit service log and compare against previous visits to identify trends before they become failures.
+
+    <Steps>
+      <Step title="Inspect and Replace Air Filters">
+        Measure the differential pressure (ΔP) across the filter bank using the installed magnehelic gauge or a handheld manometer. Replace filters when ΔP exceeds the manufacturer's stated limit — typically **250 Pa** for bag (pocket) filters and **150 Pa** for panel filters. Do not wait until the end of a calendar period if the pressure drop has already been reached.
+
+        <Tip>
+          In high-dust environments — such as workshops, commercial kitchens, or buildings near construction sites — inspect filters fortnightly rather than monthly. Fine particulate loading can double the rate of ΔP rise, leading to reduced airflow and coil fouling well before a standard monthly visit.
+        </Tip>
+
+        When replacing, note the filter class (e.g., ISO ePM1 55%, ePM10 70%) printed on the frame and install an identical or higher-grade replacement. Dispose of used filters in sealed bags to prevent re-entrainment of captured particulate.
+      </Step>
+
+      <Step title="Verify Supply, Return, and Mixed Air Temperatures">
+        Using the BMS trend data or a calibrated thermometer, record the **outside air (OA)**, **return air (RA)**, and **mixed air (MA)** temperatures at the mixing box. Calculate the theoretical mixed air temperature using the OA and RA fractions:
+
+        > **MA temp = (OA% × OA temp) + (RA% × RA temp)**
+
+        Compare this to the actual measured mixed air temperature. A deviation greater than 1.5°C indicates a damper calibration issue or air leakage in the mixing box. Also confirm the supply air temperature downstream of the coils matches the BMS setpoint (typically 12–16°C for cooling mode).
+      </Step>
+
+      <Step title="Inspect Cooling Coil">
+        With the AHU isolated and the access panel removed, visually inspect the chilled water or DX cooling coil face. Look for:
+        - **Frost formation** — indicates low refrigerant charge (DX coil), blocked airflow, or a faulty defrost cycle.
+        - **Blocked fins** — dirt accumulation between coil fins restricts airflow and reduces heat transfer efficiency. If more than 15% of the face area appears blocked, schedule a coil clean.
+        - **Fin damage** — straighten any bent fins with a fin comb before they worsen.
+      </Step>
+
+      <Step title="Check Heating Coil Operation">
+        In heating mode (or by simulating a heating demand via the BMS), verify the heating coil responds correctly:
+        - **Hot water coil** — confirm the two-port or three-port control valve opens, hot water flows, and the supply air temperature rises to setpoint. Check for evidence of weeping valve glands or leaking connections.
+        - **Electric heater battery** — confirm all stages energise in sequence. Check for tripped thermal cut-outs and record measured amp draws against the nameplate rating.
+      </Step>
+
+      <Step title="Drain Pan Inspection">
+        Open the drain pan access section and inspect:
+        1. **Standing water** — there should be none. If present, the drain trap is blocked or incorrectly sized.
+        2. **Drain trap prime** — pour approximately 500 ml of clean water into the pan to confirm it drains freely and the trap seal is maintained.
+        3. **Debris** — remove any accumulated dirt, scale, or biological growth. Wipe the pan with a dilute biocide solution approved for HVAC drain pans.
+        4. **Pan condition** — check for corrosion, cracks, or loose drain connections that could cause leakage onto the floor below.
+      </Step>
+
+      <Step title="Check Fan Belt Tension and Condition (Belt-Drive Units)">
+        With the AHU isolated and locked off, inspect the V-belt or poly-V belt:
+        - **Tension check** — apply finger pressure at the midpoint of the belt's longest span. Correct deflection is **12–20 mm** per metre of span. A belt that deflects more than this is slack and will slip; one that deflects less is over-tensioned and will accelerate bearing wear.
+        - **Condition** — reject any belt showing cracking, fraying, glazing (shiny side faces), or missing chunks. Replace as a matched set if multiple belts are fitted.
+        - **Sheave alignment** — check that drive and driven pulleys are co-planar using a straight-edge. Misalignment causes rapid belt and bearing wear.
+      </Step>
+
+      <Step title="Log Fan Amp Draws">
+        Clamp-meter the **supply fan** and **return fan** motor current on all three phases. Record the readings against the motor nameplate full-load amperage (FLA). An increase in amp draw compared to the baseline suggests increased system resistance (blocked filters, closed dampers) or a developing motor fault. A decrease may indicate belt slip or a failing motor winding.
+      </Step>
+
+      <Step title="Lubricate Fan Shaft Bearings (Non-Sealed)">
+        If the fan is fitted with grease-nipple (Zerk fitting) bearings, apply the lubricant specified on the bearing nameplate — do not substitute grades. Rotate the shaft slowly by hand while applying grease to distribute it evenly. Apply only enough grease to purge the old lubricant slightly from the bearing seal; **over-greasing is a leading cause of bearing failure** as excess grease churns, overheats, and destroys the lubrication film.
+
+        Sealed-for-life bearings require no lubrication; do not attempt to add grease.
+      </Step>
+
+      <Step title="Verify Damper Operation">
+        Using the BMS or a portable actuator tester, command each motorized damper through its full stroke and confirm:
+        - **Volume control dampers (VCDs)** — open and close to commanded positions; no hunting or stalling.
+        - **Motorized outside air (OA) damper** — fully closes on unit shutdown (confirmed with visual check or position feedback in BMS).
+        - **Actuator calibration** — compare BMS position demand vs. actual blade position. A discrepancy greater than 5° indicates a calibration or linkage issue.
+      </Step>
+
+      <Step title="Inspect Ductwork Connections at AHU">
+        Visually and physically inspect the flexible duct connectors (canvas connections) at the supply and return AHU plenums for:
+        - Air leaks — hold a smoke pencil or move your hand along the joint while the unit is running.
+        - Tears, holes, or delamination of the fabric.
+        - Loose clamping bands or flanged joints.
+
+        Seal minor leaks with approved duct sealant. Replace damaged flexible connectors promptly — leaks at the AHU can account for 10–15% of total air delivery losses.
+      </Step>
+
+      <Step title="Verify BMS / DDC Control">
+        Log into the building management system and confirm:
+        - Supply air temperature setpoint is appropriate for the season.
+        - Occupied/unoccupied schedules match current building occupancy patterns.
+        - All active alarms are acknowledged and resolved (not suppressed indefinitely).
+        - Alarm thresholds (high supply air temp, high filter ΔP, fan failure) are set to correct values.
+        - Trend data for the previous month shows no unexplained anomalies.
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Quarterly">
+    In addition to all monthly tasks, perform the following checks every three months. Quarterly visits require a longer access window — allocate at least half a day per AHU.
+
+    <Steps>
+      <Step title="Clean Supply and Return Air Coils">
+        Apply a purpose-formulated, pH-neutral coil cleaning foam or spray to both the cooling and heating coil faces. Allow the product to dwell for the time stated on the data sheet (typically 10–15 minutes), then rinse thoroughly with clean, low-pressure water directed **with** the fin direction (not against it). Ensure all cleaning solution is flushed from the coil and out through the drain pan. Residual cleaner left on coils can cause copper corrosion over time.
+      </Step>
+
+      <Step title="Inspect and Service Humidifier (If Fitted)">
+        <CardGroup cols={2}>
+          <Card title="Pan / Electrode Humidifier" icon="droplets">
+            Remove the electrode assembly and inspect for scale build-up. Descale electrodes using a solution of warm water and citric acid (approximately 10%), agitating until deposits dissolve. Flush the pan, clear the drain valve, and reassemble. Check the water level control float valve for correct operation.
+          </Card>
+          <Card title="Steam Cylinder Humidifier" icon="cloud">
+            Remove and inspect the steam cylinder. Descale or replace the cylinder per the manufacturer's guidance (typically every 1–3 seasons depending on water hardness). Inspect steam distribution manifold for blocked orifices. Check the fill and drain solenoid valves for correct operation and evidence of leakage.
+          </Card>
+        </CardGroup>
+      </Step>
+
+      <Step title="Check Flexible Duct Connections">
+        Thoroughly inspect all flexible duct connections at the AHU — supply, return, and outside air spigots. Look specifically for:
+        - **Tears or delamination** of the inner fabric liner, which can shed fibres into the airstream.
+        - **Collapsed sections** that restrict airflow.
+        - **Loose jubilee clips or flanges** that allow air bypass.
+
+        Replace any flexible connector showing structural deterioration.
+      </Step>
+
+      <Step title="Megger Test Fan Motors">
+        With the motor isolated and the supply cables disconnected, perform an insulation resistance test (megger test) using a 500 V DC insulation tester on each motor:
+        - Measure resistance between each phase winding and earth.
+        - **Minimum acceptable reading: 1 MΩ** (motors in service). New or rewound motors should read >100 MΩ.
+        - Record results and trend against previous readings. A declining insulation resistance trend indicates moisture ingress or winding degradation; plan for motor replacement before it reaches failure.
+      </Step>
+
+      <Step title="Verify Fire Damper Operation">
+        Test each fire damper within or immediately downstream of the AHU:
+        1. Isolate the AHU and ensure the area is clear.
+        2. Manually release the fusible link (or test via the control panel for motorized fire/smoke dampers).
+        3. Confirm the damper blade drops fully and closes the duct section.
+        4. Reset the damper by re-engaging the fusible link or resetting the actuator, and confirm the BMS receives a correct open-position signal before returning the unit to service.
+
+        <Note>
+          Fire and smoke damper testing must be documented to satisfy compliance obligations under **NFPA 80**, **NFPA 105**, **BS EN 1366-2**, and local building regulations. Maintain a damper schedule showing each damper ID, location, test date, tester name, test result, and next due date. These records must be available for inspection by the authority having jurisdiction (AHJ) and the building's insurers. Failure to maintain compliant records can void fire safety certification.
+        </Note>
+      </Step>
+
+      <Step title="Check Economizer Controls and CO₂ Sensor Calibration">
+        Verify the economizer (free-cooling) logic is operating correctly:
+        - Confirm the BMS enables free cooling when OA conditions are favourable (typically OA enthalpy < RA enthalpy, or OA temp < 18°C depending on strategy).
+        - Calibrate CO₂ sensors using a certified reference gas kit. Zero the sensor in fresh outdoor air and span-calibrate against a 1000 ppm or 2000 ppm reference gas as applicable. A sensor that drifts high will over-ventilate; one that drifts low will under-ventilate, allowing CO₂ build-up above ASHRAE 62.1 / CIBSE TM21 recommendations.
+      </Step>
+
+      <Step title="Inspect Mixing Box Dampers for Air Leakage">
+        With the AHU in full recirculation mode (OA damper commanded closed), measure the actual OA temperature at the mixing box thermostat location. If the measured temperature is significantly cooler than the return air temperature in winter (or warmer in summer), air is bypassing a leaking OA damper blade or worn blade seals. Inspect blades, seals, and edge seals; replace worn components.
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Annual">
+    Complete all monthly and quarterly tasks, then carry out the following comprehensive annual service. Annual maintenance should be scheduled during a planned building shutdown or low-occupancy period to allow thorough access and adequate drying time after coil cleaning.
+
+    <Steps>
+      <Step title="Full Chemical Coil Cleaning">
+        Perform a thorough chemical clean of all coils (cooling, heating, and heat recovery where fitted):
+        1. Apply an alkaline foam coil cleaner to heavily soiled coils, or an acid-based descaler where scale build-up is evident. Follow the manufacturer's mixing ratios and dwell times precisely.
+        2. Agitate with a soft bristle brush if the fouling level warrants it.
+        3. Rinse thoroughly with clean water at low pressure until the rinse water runs clear and pH is neutral.
+        4. Inspect fin condition post-clean; use a fin comb to straighten any bent fins before the coil dries.
+      </Step>
+
+      <Step title="Drain Pan Deep Clean and Biocide Treatment">
+        Remove all standing water and loose debris from the condensate drain pan. Scrub the pan surface with a stiff brush and an HVAC-approved biocide cleaner. Pay particular attention to corners, the drain trap inlet, and any areas with discolouration or slime build-up. Flush the entire condensate pipework with a biocide solution and clean water to clear any biofilm. Refill the drain trap with clean water mixed with a small quantity of biocide to maintain the trap seal and inhibit biological growth until the next service.
+      </Step>
+
+      <Step title="Replace Fan Belts">
+        Replace all V-belts or poly-V belts on belt-drive fans regardless of apparent condition. Annual replacement prevents unexpected belt failure and the associated unit downtime. When fitting new belts:
+        - Always replace as a matched set from the same manufacturer.
+        - Set belt tension to achieve the correct deflection (12–20 mm at mid-span).
+        - Re-check tension after the first 24 hours of operation, as new belts bed in and tension drops.
+      </Step>
+
+      <Step title="Align Fan Pulleys">
+        Using a straight-edge or laser alignment tool, check that the drive (motor) pulley and driven (fan) pulley are co-planar and parallel:
+        - Lay the straight-edge across both pulley faces and confirm it contacts all four faces simultaneously.
+        - Correct angular and parallel misalignment by adjusting the motor position on its slide rails.
+        - Inspect both pulleys for wear — V-grooves should be sharp-sided; a rounded or cupped groove profile indicates the pulley is worn and must be replaced before fitting new belts.
+      </Step>
+
+      <Step title="Full Electrical Inspection">
+        Carry out a comprehensive electrical inspection of the AHU electrical panel and associated equipment:
+        - Inspect all terminals for tightness, overheating (evidenced by discolouration), and corrosion.
+        - Check the **VFD (variable frequency drive)** if fitted: inspect internal capacitors, cooling fans, and heat sink for dust accumulation. Review drive fault log and clear resolved faults. Confirm all parameters match the commissioning data sheet.
+        - Measure and record motor insulation resistance (megger test as per quarterly procedure).
+        - Verify all MCBs, fuses, and overload relays are correctly rated per the original design.
+        - Test earth continuity between the AHU casing and the distribution board earth bar.
+      </Step>
+
+      <Step title="Balance Supply Air Distribution">
+        Using a balometer (capture hood) or hot-wire anemometer, spot-check the airflow at a representative sample of supply air diffusers and terminal units (minimum 25% of total terminals, or as specified in the maintenance contract). Compare measured flows to the values recorded in the original commissioning report. Discrepancies greater than ±15% from design flow should be investigated and corrected by adjusting VCD settings or reporting to the building services engineer.
+      </Step>
+
+      <Step title="Full BMS/DDC Calibration">
+        Calibrate all sensors and actuators in the AHU control loop:
+        - **Temperature sensors** — verify with a calibrated reference thermometer in the airstream. Adjust BMS offset values if deviation exceeds ±0.5°C.
+        - **Humidity sensors** — calibrate with a salt-reference calibration kit or certified reference instrument.
+        - **CO₂ and VOC sensors** — span-calibrate with reference gas as per quarterly procedure.
+        - **Pressure sensors/transducers** — zero and span against a calibrated manometer.
+        - **Actuators** — confirm full-stroke operation and that feedback signals match commanded positions within 2% tolerance.
+      </Step>
+
+      <Step title="Inspect and Test All Fire and Smoke Dampers">
+        Perform a full documented test of every fire damper and smoke control damper associated with the AHU. For each damper, record:
+        - Damper ID and location reference
+        - Test method (fusible link release, electrical signal, or manual)
+        - Result (pass/fail — fully closed within the required time)
+        - Reset confirmation
+        - Tester name, competency reference, and date
+
+        Any damper that fails to operate correctly must be quarantined from service and repaired or replaced before the unit is returned to full operation. Provide the completed damper test schedule to the building owner or facilities manager for their compliance file.
+      </Step>
+
+      <Step title="Update Service Log and Issue Condition Report">
+        Complete the unit service log with all work carried out, readings recorded, parts replaced, and any defects found. Issue a written condition report to the client or facilities manager that includes:
+        - Summary of work completed
+        - Any defects found (categorised by severity — immediate action, within 30 days, monitor)
+        - Spare parts consumed and any parts recommended for next visit
+        - Next scheduled maintenance dates
+        - Updated asset register entries (belt sizes, filter specifications, motor data)
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Quick Reference
+
+<CardGroup cols={3}>
+  <Card title="Filter Replacement" icon="filter">
+    Replace when ΔP exceeds manufacturer limit (typically **250 Pa** for bag filters). Check fortnightly in high-dust sites.
+  </Card>
+  <Card title="Belt Tension" icon="wrench">
+    **12–20 mm** deflection at mid-span. Replace annually regardless of condition; always fit matched sets.
+  </Card>
+  <Card title="Drain Pan" icon="triangle-exclamation">
+    Zero standing water tolerance. Prime trap at every visit. Biocide treat quarterly and annually.
+  </Card>
+  <Card title="Coil Cleaning" icon="spray-can">
+    Rinse **with** fin direction at low pressure. Confirm neutral pH rinse water before closing up.
+  </Card>
+  <Card title="Fire Dampers" icon="fire">
+    Test and document annually (minimum). Records must be retained and available for AHJ inspection.
+  </Card>
+  <Card title="BMS Calibration" icon="sliders">
+    Full sensor and actuator calibration annually. Spot-check CO₂ sensors quarterly with reference gas.
+  </Card>
+</CardGroup>

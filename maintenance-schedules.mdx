@@ -1,0 +1,232 @@
+---
+title: "HVAC Maintenance Frequency and Schedule Reference"
+sidebarTitle: "Schedules"
+description: "Complete HVAC maintenance schedule reference covering daily, weekly, monthly, quarterly, and annual task intervals for all major equipment types."
+---
+
+Adhering to manufacturer-recommended and industry-standard maintenance intervals is the foundation of any effective PM program. Skipping or delaying service tasks compounds wear, reduces efficiency, and increases the probability of a costly unplanned failure. Use the tables and interval tabs below as your master reference when building work orders, planning technician time, and ordering parts. Always cross-reference these intervals against your OEM documentation — some equipment carries tighter requirements based on operating hours, environmental conditions, or refrigerant type.
+
+<Tip>
+  Implement a **Computerized Maintenance Management System (CMMS)** — such as IBM Maximo, UpKeep, Fiix, or Limble CMMS — to automate work order generation at each interval, track parts inventory, store service history, and produce compliance reports. A CMMS eliminates the risk of missed PM visits and gives you a defensible audit trail for warranty claims and regulatory inspections.
+</Tip>
+
+## Schedule Overview Table
+
+The table below summarizes task frequency across all covered equipment types. Use it for at-a-glance planning and resource scheduling.
+
+| Equipment Type | Daily | Weekly | Monthly | Quarterly | Annual |
+|---|---|---|---|---|---|
+| Chiller System | Log operating parameters | — | Inspect oil level & refrigerant sight glass | Oil analysis, tube inspection, purge unit service | Full tube brush, compressor overhaul check, leak test |
+| Air Handling Unit | Check filter differential pressure | Inspect belt tension | Replace filters (or per ΔP), clean drain pan | Coil cleaning, belt replacement, bearing lubrication | Full coil chemical clean, actuator calibration, damper service |
+| DX Split AC | — | Check condensate drain | Clean indoor filters, inspect outdoor coil | Refrigerant leak check, capacitor test, coil clean | Full refrigerant charge verify, compressor amp draw, control calibration |
+| Packaged AC (RTU) | — | Inspect economizer dampers | Check drain pan, lubricate fan bearings | Clean condenser coils, inspect heat exchanger | Gas valve test, full refrigerant circuit check, controls calibration |
+| Refrigeration Plant | Log suction/discharge pressures & temperatures | Inspect oil separator sight glass | Check defrost cycles, inspect door gaskets | Replace filter-driers, check safety controls | Compressor valve inspection, oil change, full leak test |
+| Condenser | Check sump water level (evaporative) | Inspect spray nozzles / fan blades | Clean basin, check water treatment chemistry | Descale coils, inspect eliminator pads | Full mechanical inspection, motor rewind check, drift eliminator replacement |
+| Compressor | Monitor amp draw & discharge temp | Check oil level sight glass | Check vibration levels, inspect coupling | Change oil filter, check unloader operation | Valve plate inspection, bearing replacement, refrigerant leak test |
+
+---
+
+## Tasks by Interval
+
+<Tabs>
+  <Tab title="Daily">
+    Perform these checks at the start of each operating day or at the beginning of each shift. Daily tasks are observation-based — they take 15–30 minutes per system and exist to catch emerging faults before they become failures.
+
+    ### Chiller System
+    | Task | Acceptance Criteria |
+    |---|---|
+    | Log chilled water supply and return temperatures | Within ±1°F of setpoint |
+    | Log condenser water supply and return temperatures | Per design delta-T (typically 10°F) |
+    | Record compressor suction and discharge pressures | Within OEM operating envelope |
+    | Check compressor oil pressure differential | Minimum 25 psid (OEM-specific) |
+    | Verify evaporator and condenser flow rates on BMS | No flow alarm active |
+    | Check for active fault codes on chiller controller | No active alarms |
+    | Inspect refrigerant sight glass for moisture indicator color | Green (dry); replace drier if yellow |
+
+    ### Air Handling Unit
+    | Task | Acceptance Criteria |
+    |---|---|
+    | Check supply air temperature and setpoint deviation | Within ±2°F |
+    | Verify supply and return fan operation (BMS or local) | No fault alarms |
+    | Check filter differential pressure gauge or BMS alarm | Below change-out threshold |
+    | Confirm heating/cooling coil valve positions match demand | No hunting or full-open fault |
+
+    ### Refrigeration Plant
+    | Task | Acceptance Criteria |
+    |---|---|
+    | Log suction pressure and saturation temperature | Per system design |
+    | Log discharge pressure and saturation temperature | Per system design |
+    | Record suction and discharge superheat | 8–12°F suction superheat typical |
+    | Check compressor oil level in sight glass | Half-glass or above |
+    | Verify all case temperatures are at setpoint | Within ±2°F |
+    | Confirm defrost termination times are correct | No premature or incomplete defrosts |
+
+    ### Compressor
+    | Task | Acceptance Criteria |
+    |---|---|
+    | Monitor compressor full-load amp draw | Within 5% of nameplate |
+    | Record discharge line temperature | Below 225°F for most refrigerants |
+    | Listen for abnormal noise or vibration | No rattling, knocking, or squealing |
+  </Tab>
+
+  <Tab title="Monthly">
+    Monthly tasks combine observations with hands-on inspection and minor servicing. Budget 1–4 hours per major system depending on size and accessibility.
+
+    ### Chiller System
+    | Task | Notes |
+    |---|---|
+    | Inspect compressor oil level and color | Discolored or foaming oil indicates refrigerant migration — investigate |
+    | Check refrigerant charge via sight glass | Bubbles at full load may indicate low charge |
+    | Inspect all refrigerant pipe insulation for damage | Repair damaged insulation immediately to prevent condensation |
+    | Test chilled water flow switch operation | Manually interrupt flow; confirm compressor trips |
+    | Inspect purge unit operation log (centrifugal chillers) | High purge frequency indicates refrigerant leak or air infiltration |
+    | Check control panel for loose terminal connections | Torque to OEM spec; look for signs of heat damage |
+    | Verify BMS setpoints and control sequence | Compare BMS readings to local gauges; recalibrate if >2°F drift |
+
+    ### Air Handling Unit
+    | Task | Notes |
+    |---|---|
+    | Inspect and replace air filters (or per differential pressure) | Log filter condition and MERV rating; document replacement date |
+    | Clean and treat condensate drain pan with biocide tablet | Prevent Legionella and algae growth in pan and drain line |
+    | Flush condensate drain line | Pour water to verify free flow; clear blockages with vacuum |
+    | Inspect fan wheel for debris accumulation | Even minor imbalance causes bearing damage; clean if fouled |
+    | Check belt tension and alignment (belt-drive fans) | Use tension meter; re-tension per OEM deflection spec |
+    | Inspect access door gaskets and latches | Replace damaged gaskets to prevent bypass air and noise |
+    | Verify outside air damper and economizer operation | Check actuator linkage; confirm damper travels full stroke |
+
+    ### DX Split AC
+    | Task | Notes |
+    |---|---|
+    | Clean or replace indoor unit air filters | Wash reusable foam filters; replace disposable panel filters |
+    | Inspect indoor coil fins for damage or fouling | Straighten fins with fin comb; clean with non-acidic coil cleaner |
+    | Check condensate tray and drain for blockages | Clear algae; add biocide tablet |
+    | Inspect refrigerant line insulation on suction line | Replace cracked or missing insulation |
+    | Verify thermostat/controller setpoints and mode | Confirm setpoints match building schedule |
+    | Inspect outdoor unit for debris accumulation around coil | Clear leaves, grass, and debris from all four coil faces |
+
+    ### Water/Air-Cooled Packaged AC (RTU)
+    | Task | Notes |
+    |---|---|
+    | Check drain pan and condensate drain for blockages | Clear and treat with biocide |
+    | Lubricate supply and return fan motor bearings | Use manufacturer-specified grease; do not over-grease sealed bearings |
+    | Inspect economizer damper and actuator linkage | Confirm free travel; lubricate linkage pivot points |
+    | Verify gas-fired heat section (if equipped) — visual ignition check | Confirm reliable ignition on call for heat; inspect heat exchanger visually for cracks |
+    | Check all electrical connections in control panel | Tighten loose terminals; look for burnt insulation |
+
+    ### Refrigeration Plant
+    | Task | Notes |
+    |---|---|
+    | Inspect defrost heater operation for all evaporators | Confirm complete defrost; check termination thermostat setting |
+    | Check door gaskets and hinges on all refrigerated cases/rooms | Replace cracked or torn gaskets immediately |
+    | Inspect evaporator coils for excessive frost or ice bridging | Indicates defrost malfunction or door-seal failure |
+    | Verify liquid line sight glass is clear with no bubbles | Bubbles indicate low refrigerant charge or restriction |
+    | Check crankcase heater operation on all compressors | Must be energized during off-cycle to prevent liquid slugging |
+    | Inspect oil separator level and drain float operation | Low separator level may indicate oil logging in system |
+
+    ### Condenser (Evaporative)
+    | Task | Notes |
+    |---|---|
+    | Test sump water chemistry (pH, conductivity, biocide level) | pH 7.0–8.5; adjust with acid/alkaline dosing |
+    | Inspect spray nozzles for blockage or misalignment | Clean blocked nozzles; replace cracked nozzles |
+    | Check bleed-off rate and make-up water valve operation | Prevent scale buildup from high cycles of concentration |
+    | Inspect fan blade condition and set screw tightness | Tighten loose set screws; replace cracked or bent blades |
+    | Verify belt tension and sheave alignment (belt-drive fans) | Misalignment causes rapid belt and bearing wear |
+
+    ### Compressor
+    | Task | Notes |
+    |---|---|
+    | Check vibration levels with vibration meter or by touch | Elevated vibration indicates bearing wear or imbalance |
+    | Inspect all suction and discharge service valve packing | Replace leaking packing; ensure valve is fully front-seated during operation |
+    | Verify unloader operation (reciprocating compressors) | Confirm capacity reduction steps function on command |
+    | Check coupling or belt condition (open-drive compressors) | Inspect for cracking, fraying, or glazing |
+  </Tab>
+
+  <Tab title="Annual">
+    Annual maintenance is your most comprehensive scheduled service event. Plan for extended equipment downtime — typically 4–8 hours per major system. Coordinate outages with building operations and schedule outside of peak cooling or heating seasons where possible.
+
+    <Warning>
+      **Do not skip annual service.** Annual tasks include compressor valve inspections, tube-side cleaning, refrigerant leak tests, and electrical safety checks that cannot be identified through daily or monthly observation alone. Deferring annual service voids most OEM warranties and significantly increases the probability of a mid-season equipment failure.
+    </Warning>
+
+    ### Chiller System
+    | Task | Notes |
+    |---|---|
+    | Brush and inspect evaporator and condenser tubes | Use nylon brushes; document tube condition; plug any leaking tubes |
+    | Perform refrigerant leak test (electronic and/or nitrogen pressure test) | Pressure-test to OEM specified test pressure; document results |
+    | Send oil sample to laboratory for analysis | Check for wear metals, moisture, acid number, and viscosity |
+    | Inspect and clean purge unit (centrifugal chillers) | Service purge compressor; replace filter and drier |
+    | Calibrate chilled water and condenser water temperature sensors | Use NIST-traceable reference thermometer; adjust BMS offsets |
+    | Perform hipot or megger test on compressor motor windings | Document insulation resistance; investigate readings below 1 MΩ |
+    | Inspect and re-torque all electrical panel connections | Thermal imaging of panel recommended; replace discolored terminals |
+    | Verify all safety controls: low-pressure, high-pressure, oil pressure, flow switches | Test each cutout; document setpoints and trip values |
+    | Check and adjust refrigerant charge to OEM specification | Weigh in or out refrigerant as required; document quantities |
+
+    ### Air Handling Unit
+    | Task | Notes |
+    |---|---|
+    | Chemical clean heating and cooling coils (fin-and-tube) | Use approved coil cleaner; rinse thoroughly; document before/after differential pressure |
+    | Replace fan drive belts regardless of visible condition | Belts fatigue internally; proactive replacement prevents mid-season failure |
+    | Replace fan bearings or re-grease and inspect per vibration data | Use bearing puller; check shaft for wear |
+    | Calibrate all damper actuators (outside air, return air, exhaust) | Verify full stroke; adjust linkage or replace actuator if stroke is limited |
+    | Inspect and clean mixing box and plenum sections | Remove debris accumulation; inspect for rodent ingress |
+    | Test and calibrate all humidity and CO₂ sensors | Use reference instruments; adjust BMS calibration offsets |
+    | Conduct duct leakage test on supply and return ducts | Repair leaking joints and seams with mastic or foil tape |
+    | Inspect fan wheel, shaft, and hub for corrosion or cracks | Replace wheel if cracked; have shaft machined if worn |
+
+    ### DX Split AC
+    | Task | Notes |
+    |---|---|
+    | Verify refrigerant charge by superheat and subcooling method | Document suction superheat (target 8–12°F) and liquid subcooling (target 10–15°F) |
+    | Measure compressor amp draw and compare to nameplate | High amp draw indicates worn valves or low refrigerant |
+    | Test capacitors (start and run) with capacitor meter | Replace any capacitor reading more than 10% below labeled µF value |
+    | Perform full electronic leak test on all refrigerant joints and fittings | Document results; repair and re-test all leaks |
+    | Clean outdoor coil with low-pressure water and coil cleaner | Rinse from inside out; do not bend fins |
+    | Inspect and clean condensate pump (if fitted) | Check float switch, clean reservoir, verify pump operation |
+    | Calibrate room thermostat / control head | Compare to calibrated reference thermometer; adjust offset |
+    | Check all electrical connections, contactors, and control board | Replace pitted contactors; tighten terminal screws |
+
+    ### Water/Air-Cooled Packaged AC (RTU)
+    | Task | Notes |
+    |---|---|
+    | Perform full refrigerant circuit leak test | Electronic detection plus UV dye check if history of leaks |
+    | Inspect and clean heat exchanger (gas units) with brush and vacuum | Inspect for cracks; perform CO test downstream of heat exchanger |
+    | Test gas valve, igniter, and flame sensor operation | Confirm reliable ignition within OEM-specified trial time |
+    | Calibrate all economizer controls and enthalpy sensors | Verify free cooling lockout and changeover setpoints |
+    | Replace compressor contactor if pitting is observed | Pitted contacts cause voltage drop and compressor damage |
+    | Perform megger test on supply fan and condenser fan motors | Investigate readings below 1 MΩ to ground |
+    | Inspect roof curb and unit base for corrosion or water ingress | Treat with rust inhibitor; seal any penetrations |
+
+    ### Refrigeration Plant
+    | Task | Notes |
+    |---|---|
+    | Perform full system refrigerant leak test (all circuits) | Use calibrated electronic leak detector; document all leak points |
+    | Replace suction line filter-driers on all circuits | Always replace after any system opening |
+    | Perform compressor valve inspection (reciprocating compressors) | Check lift, seating, and spring tension; replace worn valve assemblies |
+    | Change compressor oil and oil filter on all compressors | Send oil sample for analysis; compare to baseline |
+    | Calibrate all safety controls: high-pressure cutout, low-pressure cutout, oil pressure, high-temperature | Document setpoints and actual trip values; replace faulty controls |
+    | Inspect evaporator coils and defrost heaters in all cold rooms | Verify defrost heater continuity; replace open heaters |
+    | Test and calibrate all temperature controllers and sensors | Use calibrated reference; adjust offsets in controller |
+    | Inspect condenser fan motors and blade condition | Megger test motors; replace cracked or bent blades |
+
+    ### Condenser
+    | Task | Notes |
+    |---|---|
+    | Descale evaporative condenser coils with chemical descalant | Follow chemical manufacturer dilution ratios; neutralize and rinse |
+    | Replace drift eliminators if damaged or deformed | Eliminators prevent Legionella-laden water droplets escaping |
+    | Inspect and clean basin with biocide disinfection | Full Legionella risk management clean-down per local regulation |
+    | Replace fan bearings or re-grease and inspect per vibration data | Document bearing condition; replace if vibration or noise is elevated |
+    | Inspect motor windings with megger | Investigate readings below 1 MΩ |
+    | Inspect coil for corrosion, pitting, and mechanical damage | Repair minor leaks with OEM-approved sealant; replace coil if severely degraded |
+
+    ### Compressor
+    | Task | Notes |
+    |---|---|
+    | Inspect valve plates and reeds (reciprocating compressors) | Replace worn or broken reeds; check valve seat surfaces |
+    | Replace oil filter and compressor oil (all types) | Use OEM-specified oil grade; document quantity |
+    | Inspect and replace shaft seal (open-drive compressors) | Replace seal if weeping; re-torque seal plate bolts |
+    | Perform vibration spectrum analysis | Trending data identifies bearing and balance faults before failure |
+    | Megger test motor windings (hermetic and semi-hermetic) | Minimum 1 MΩ to ground at 500 VDC test voltage |
+    | Check and calibrate all safety controls and protection devices | High-pressure cutout, low-pressure cutout, oil pressure differential, motor thermal protection |
+    | Inspect slide valve operation (screw compressors) | Verify capacity control steps respond correctly to demand signal |
+  </Tab>
+</Tabs>

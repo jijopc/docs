@@ -1,0 +1,223 @@
+---
+title: "Chiller System Preventive Maintenance Procedures"
+sidebarTitle: "Chiller System"
+description: "Step-by-step chiller PM procedures covering monthly checks, quarterly inspections, and annual overhauls for centrifugal, screw, scroll, and absorption chillers."
+---
+
+Chillers are the heart of most large commercial and industrial cooling systems, and a disciplined preventive maintenance programme is essential to protect your capital investment, maintain energy efficiency, and avoid costly unplanned downtime. This guide covers the four most common chiller types — **centrifugal**, **screw**, **scroll**, and **absorption** — and organises tasks by service interval so your engineering team can plan labour and materials effectively.
+
+<Note>
+  Record every reading, observation, and corrective action in your chiller service log at each visit. Trend data is your earliest warning of developing faults — a single anomalous reading rarely tells the full story, but a pattern over three months almost always does.
+</Note>
+
+## Chiller Types at a Glance
+
+<CardGroup cols={2}>
+  <Card title="Centrifugal" icon="rotate">
+    Uses a high-speed impeller to compress refrigerant. Common in large installations (200 RT+). Requires oil management and purge unit inspection.
+  </Card>
+  <Card title="Screw" icon="gear">
+    Twin-rotor positive displacement compressor. Widely used from 50–500 RT. Requires regular oil analysis and bearing checks.
+  </Card>
+  <Card title="Scroll" icon="arrows-spin">
+    Orbiting scroll compressor. Common in smaller packaged chillers (5–50 RT). Generally hermetic; focus on electrical and refrigerant checks.
+  </Card>
+  <Card title="Absorption" icon="fire-flame-curved">
+    Uses heat (steam, hot water, or gas) rather than a compressor. Requires lithium bromide solution management and corrosion inhibitor monitoring.
+  </Card>
+</CardGroup>
+
+---
+
+## Maintenance Schedule
+
+<Tabs>
+  <Tab title="Monthly">
+
+    Perform the following tasks every month during the cooling season, and at least every two months during standby periods. Monthly checks are primarily observational and measurement-based — flag anything outside normal operating range and investigate before the next visit.
+
+    <Steps>
+      <Step title="Check Refrigerant Pressures">
+        Record suction pressure and discharge pressure from the chiller gauges or BMS trend. Compare readings against the manufacturer's performance map at the current chilled water and condenser water temperatures. A suction pressure lower than expected indicates a possible low refrigerant charge, fouled evaporator, or restricted expansion valve. A high discharge pressure points to a fouled condenser, non-condensable gases, or high condenser water temperature.
+      </Step>
+
+      <Step title="Inspect the Refrigerant Sight Glass">
+        Observe the liquid line sight glass for a minimum of 30 seconds. A clear, bubble-free flow indicates an adequate refrigerant charge. Persistent bubbles or foaming indicate a low charge or moisture contamination. Also check the moisture indicator dot — green indicates dry refrigerant; yellow or off-colour indicates moisture ingress and requires immediate investigation.
+      </Step>
+
+      <Step title="Check Oil Level and Oil Pressure">
+        On screw and centrifugal chillers, verify the oil level in the sight glass — level should sit in the middle third of the glass at steady-state operation. Record the oil pressure differential (oil pump discharge minus refrigerant suction pressure); this should match the manufacturer's specification, typically 100–200 kPa differential. Low oil pressure with correct level suggests a worn oil pump or clogged oil filter.
+      </Step>
+
+      <Step title="Verify Chilled Water Temperatures">
+        Record chilled water supply temperature and return temperature. Typical design values are **6 °C supply** and **12 °C return** (6 K ΔT), but confirm against your system design. A ΔT significantly less than design indicates low load, poor flow distribution, or coil fouling in the building. Log both values against outdoor ambient temperature for trending.
+      </Step>
+
+      <Step title="Check Condenser Water Temperatures">
+        Record condenser water entering and leaving temperatures. The typical design leaving condenser water temperature for a water-cooled chiller is 29–32 °C depending on cooling tower design. A leaving temperature above design at rated load indicates cooling tower fouling, inadequate tower flow, or high ambient wet-bulb temperature.
+      </Step>
+
+      <Step title="Inspect the Control Panel">
+        Review the chiller controller for active alarms and stored fault codes. Log every fault code — even those that cleared automatically — as these indicate transient conditions that may worsen over time. Clear nuisance alarms only after logging the code and verifying the underlying condition is normal. Check that setpoints (chilled water setpoint, demand limit, anti-recycle timers) match the commissioned values.
+      </Step>
+
+      <Step title="Check Water Treatment Chemical Levels">
+        Test chilled water and condenser water circuits using your water treatment supplier's test kit. Record and verify the following are within specification:
+        - **pH:** 7.0–8.5 for both circuits
+        - **Conductivity:** within the blowdown setpoints established by your water treatment programme
+        - **Corrosion inhibitor concentration:** per supplier recommendation (typically molybdate or azole-based)
+        - **Biological activity:** visually inspect for slime or biofilm at strainer screens
+
+        Dose as required and record chemical additions in the water treatment log.
+      </Step>
+
+      <Step title="Inspect Water Connections and Valves for Leaks">
+        Walk all accessible chilled water and condenser water pipework, flanges, flexible connections, and valve glands. Mark any active drips with paint pen or tape for tracking. Tighten gland packings or schedule joint repairs as appropriate. Water leaks in condenser water circuits are a primary vector for waterside scale and biological growth.
+      </Step>
+
+      <Step title="Check for Vibration and Unusual Noise">
+        Listen to the compressor at startup and at steady-state load. On screw and centrifugal machines, place a vibration pen or handheld vibration analyser on compressor and motor bearing housings and compare to baseline readings taken at commissioning. Elevated vibration (>4 mm/s RMS for most chillers) requires investigation. Note any new or changed noises: knocking, squealing, or intermittent surging on centrifugals.
+      </Step>
+
+      <Step title="Verify Flow Switches, Pressure Switches, and Safety Cutouts">
+        Confirm chilled water flow switch and condenser water flow switch status are healthy on the controller. Simulate a low-flow condition (momentarily restrict flow or use the controller's test mode if available) and verify the chiller shuts down cleanly. Restore flow and confirm auto-restart per site interlock logic. Do not leave flow switches in a bypassed state.
+      </Step>
+
+      <Step title="Record Amp Draw on All Motors">
+        Using a calibrated clamp meter, record running current on all three phases for the compressor motor, oil pump motor, and condenser water pump motor. Compare to nameplate full-load amperage (FLA) and to previous readings. Current more than 10% above FLA indicates motor stress or mechanical overload. Phase imbalance greater than 2% requires investigation of the power supply.
+      </Step>
+    </Steps>
+
+  </Tab>
+
+  <Tab title="Quarterly">
+
+    Quarterly tasks go deeper than monthly observations and require the chiller to be taken offline for part of the visit. Coordinate with operations to schedule a service window of four to eight hours.
+
+    <Steps>
+      <Step title="Megger Test Compressor Motor Windings">
+        With the chiller isolated and locked out/tagged out, disconnect the compressor motor leads at the terminal block. Using a 500 V or 1000 V insulation resistance tester (megger), measure phase-to-phase and phase-to-earth insulation resistance. Acceptable minimum is 100 MΩ for a healthy motor; values below 10 MΩ require investigation, and values below 1 MΩ indicate imminent winding failure. Record all readings and trending over time is critical.
+      </Step>
+
+      <Step title="Inspect and Clean Strainers">
+        Isolate and depressurise the chilled water and condenser water strainers (Y-strainers or basket strainers). Remove the strainer basket, clean with water and a soft brush, and inspect for basket damage or corrosion. Reinstall and confirm no leakage on return to service. A blocked strainer is among the most common causes of low-flow trips.
+      </Step>
+
+      <Step title="Check and Re-Torque All Electrical Connections">
+        With the unit fully isolated, open the main control panel and power panel. Check every terminal, lug, and bus-bar connection for signs of overheating (discolouration, melted insulation), corrosion, or looseness. Re-torque all power connections to the manufacturer's specified torque values using a calibrated torque screwdriver. Loose connections cause overheating, increased resistance, and eventually arcing.
+      </Step>
+
+      <Step title="Inspect Chilled Water Piping Insulation">
+        Walk all accessible chilled water pipework, elbows, flanges, and valve bodies. Look for damaged, missing, or wet insulation. Wet insulation loses its thermal value and promotes corrosion on the pipe surface underneath. Replace any sections where insulation has been compromised, particularly at pipe supports where insulation is prone to compression and moisture ingress.
+      </Step>
+
+      <Step title="Test All Safety Devices">
+        Test each of the following safety devices individually and confirm the chiller shuts down correctly:
+        - **High-pressure cutout:** Temporarily adjust the setpoint to slightly above operating pressure, or use the controller's test function. Confirm the chiller trips and logs the alarm. Reset and restore correct setpoint.
+        - **Low-pressure cutout:** Verify setpoint is correctly configured to prevent evaporator freezing (typically −10 to −15 °C saturated suction for R-134a/R-513A).
+        - **Freeze protection thermostat:** Confirm setpoint is at 3–4 °C leaving evaporator water temperature and that it triggers a clean shutdown.
+
+        Log all test results with pass/fail and the date.
+      </Step>
+
+      <Step title="Lubricate Bearings">
+        On chillers with non-sealed (greaseable) bearings — typically on condenser water pump motors, cooling tower fan motors, or open-drive compressor designs — apply the manufacturer's specified grease type and quantity. Over-greasing is as damaging as under-greasing; follow the lubrication interval chart from the motor nameplate or manual. Purge old grease from the bearing if a purge fitting is present.
+      </Step>
+
+      <Step title="Inspect the Economizer (If Fitted)">
+        On centrifugal and some screw chillers equipped with a refrigerant-side economizer (flash economizer), verify that the intermediate pressure is tracking correctly between suction and discharge pressure. Inspect the economizer vessel for any sign of oil accumulation (indicates excessive oil carryover) and verify the liquid level control valve is operating correctly.
+      </Step>
+
+      <Step title="Calibrate Temperature and Pressure Sensors">
+        Using a calibrated reference instrument (NIST-traceable thermometer and digital pressure gauge), compare each chilled water supply/return sensor, condenser water supply/return sensor, and refrigerant suction/discharge pressure transducer against the reference. Offset or recalibrate any sensor reading more than ±0.5 °C (temperature) or ±15 kPa (pressure) from reference. Document all pre- and post-calibration values.
+      </Step>
+    </Steps>
+
+  </Tab>
+
+  <Tab title="Annual">
+
+    Annual maintenance is a comprehensive overhaul and should be carried out at the end of the cooling season or during a planned shutdown window. Budget six to sixteen hours of labour depending on chiller size and findings. Some tasks — such as tube testing and oil analysis — require specialist subcontractors and should be booked in advance.
+
+    <Warning>
+      Refrigerant recovery must be performed by a qualified refrigerant handling technician in accordance with local environmental regulations (e.g., F-Gas Regulation in the EU, EPA Section 608 in the US). **Never vent refrigerant to atmosphere.** Use a certified recovery machine and document the recovered weight. Recharge only with virgin or reclaimed refrigerant of the correct grade and weigh in the charge against the nameplate charge weight.
+    </Warning>
+
+    <Steps>
+      <Step title="Eddy-Current Tube Test">
+        Engage a specialist NDT contractor to perform eddy-current testing on the shell-and-tube evaporator and condenser. This test detects wall-thinning, pitting, and cracking in individual tubes before they fail and cause refrigerant-to-water or water-to-refrigerant cross-contamination. Tubes found to be below the minimum acceptable wall thickness (typically 80% of original wall as a threshold) should be plugged or replaced. Obtain a written report and retain it with the chiller file.
+      </Step>
+
+      <Step title="Full Oil Analysis">
+        Draw an oil sample from the chiller oil separator or sump and submit it to an accredited laboratory. The analysis should include:
+        - **Acid number (TAN):** > 0.1 mg KOH/g indicates refrigerant breakdown or moisture contamination
+        - **Moisture content:** > 50 ppm requires oil change
+        - **Viscosity:** compare to new-oil specification
+        - **Metal particles (wear metals):** iron, copper, aluminium, and chrome indicate specific component wear
+
+        Take corrective action based on results before returning the chiller to service.
+      </Step>
+
+      <Step title="Replace Oil Filter and Refrigerant Drier">
+        Replace the oil filter cartridge regardless of oil analysis results — annual replacement is considered best practice. On systems fitted with a replaceable-core (bi-flow) liquid line drier, replace the drier core during the annual service when the refrigerant circuit is open. Confirm drier size and refrigerant compatibility before ordering parts.
+      </Step>
+
+      <Step title="Check and Adjust Refrigerant Charge">
+        With the refrigerant circuit open (following proper recovery), weigh the total refrigerant charge against the nameplate value. A charge more than 5% below nameplate indicates a leak that must be found and repaired before recharging. Use an electronic leak detector and/or fluorescent dye inspection to locate all leak points. Repair leaks, pressure-test the circuit with OFN (oxygen-free nitrogen) to 110% of maximum allowable working pressure (MAWP), then dehydrate with a vacuum pump to < 500 microns before recharging.
+      </Step>
+
+      <Step title="Inspect Purge Unit (Centrifugal Chillers)">
+        On centrifugal chillers operating at sub-atmospheric pressures (e.g., R-123/R-1233zd), inspect the purge unit. Check the purge compressor oil level, test the purge unit cycling, and review the purge run-hour log. Excessive purge run hours indicate refrigerant leaks or air/moisture ingress. Replace the purge unit carbon filter and drier if run hours exceed the manufacturer's replacement interval.
+      </Step>
+
+      <Step title="Full Electrical Inspection">
+        Inspect all main contactors for contact wear, pitting, and spring tension — replace any set showing pitting deeper than 0.5 mm. Check all thermal overload relays against motor nameplate FLA settings; reset to correct values if found drifted. Inspect the main control board for signs of overheating, failed capacitors (bulging tops), or damaged traces. Test the chiller's demand-limit and capacity-control circuits through their full operating range.
+      </Step>
+
+      <Step title="Flush and Clean Waterside Heat Exchangers">
+        After checking tube test results, chemically clean the evaporator and condenser waterside circuits if scale or biofouling is present. Use a recirculating descaling pump with a mild acid solution (citric acid or a proprietary descalant) compatible with the materials of construction. Flush thoroughly with clean water until pH of flush water matches inlet water. For severely fouled condensers (approach temperature > 2 °C above design), mechanical brush cleaning of tubes may be required.
+      </Step>
+
+      <Step title="Update Service Log and Generate Report">
+        Compile all readings, test results, calibration records, parts replaced, and corrective actions into a formal service report. Update the chiller's lifetime service log with all oil analysis certificates, eddy-current test reports, refrigerant charge records, and motor insulation test results. Provide a summary of findings and recommendations for the next service period to the facility manager.
+      </Step>
+    </Steps>
+
+  </Tab>
+</Tabs>
+
+---
+
+## Quick Reference: Key Performance Parameters
+
+<CardGroup cols={3}>
+  <Card title="Chilled Water ΔT" icon="thermometer">
+    Typical design: **6 °C supply / 12 °C return**. A lower-than-design ΔT at full load indicates distribution or coil issues.
+  </Card>
+  <Card title="Condenser Approach" icon="droplets">
+    Shell-and-tube condenser approach temperature should be **≤ 1–2 °C** above leaving condenser water temperature. Higher values indicate fouling.
+  </Card>
+  <Card title="Compressor kW/RT" icon="bolt">
+    Track efficiency monthly. A rising kW/RT trend at the same load indicates refrigerant, waterside, or mechanical degradation.
+  </Card>
+</CardGroup>
+
+---
+
+## Troubleshooting Common Alarms
+
+<Accordion title="High Discharge Pressure">
+  Check condenser water supply temperature against design. Verify condenser water flow rate using differential pressure across the condenser. Inspect condenser waterside for scale (approach temperature). Check for non-condensable gases — if present, purge the system per manufacturer instructions. Confirm the condenser water bypass valve is closed during chiller operation.
+</Accordion>
+
+<Accordion title="Low Suction Pressure / Low Refrigerant Charge">
+  Inspect the sight glass for bubbles. Check suction superheat — excessive superheat (> 10–12 K above design) suggests low charge or a restricted expansion valve. Perform a leak check before adding refrigerant. Never add refrigerant to a leaking system without first finding and repairing the leak.
+</Accordion>
+
+<Accordion title="Low Oil Pressure Alarm">
+  Check oil level in the sight glass. Inspect the oil filter differential pressure — replace if differential exceeds the manufacturer's limit (typically 100–150 kPa). Check oil pump motor amp draw. If oil level is correct and filter is clean, the oil pump itself may require inspection.
+</Accordion>
+
+<Accordion title="Chilled Water Flow Fault">
+  Verify the chilled water pump is running and delivering correct pressure differential. Inspect the Y-strainer — blockage is the most common cause. Confirm the flow switch paddle is not stuck. Check all isolation valves in the chilled water circuit are fully open.
+</Accordion>

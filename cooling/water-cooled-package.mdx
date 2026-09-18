@@ -1,0 +1,170 @@
+---
+title: "Water-Cooled Packaged AC Unit Maintenance Guide"
+sidebarTitle: "Water-Cooled Package"
+description: "Complete preventive maintenance procedures for water-cooled packaged AC units, covering monthly inspections and annual overhaul tasks for commercial and critical environments."
+---
+
+Water-cooled packaged air conditioning units are self-contained refrigerant systems that reject heat through a building condenser water loop rather than to the outdoor air directly. They are widely used in **server rooms, data centres, and internal commercial spaces** — locations where roof or wall penetrations for outdoor condensers are impractical or where the tighter temperature control offered by condenser water-side regulation is required. Because the condenser coil and refrigerant circuit share the same enclosure as the air-handling section, a single unit failure can simultaneously lose both cooling and air distribution for a critical zone. A structured preventive maintenance programme is therefore essential to maximise availability and efficiency.
+
+<Note>
+  Water treatment is critical for water-cooled packaged units. The condenser coil is particularly vulnerable to scale and biofouling because it typically operates at higher water temperatures than a chiller condenser. Work with a qualified water treatment specialist to establish dosing and blowdown schedules for your condenser water loop. Keep water treatment logs alongside your unit service records.
+</Note>
+
+---
+
+## Maintenance Schedule
+
+<Tabs>
+  <Tab title="Monthly">
+
+    Monthly visits focus on operating data collection, filter maintenance, and visual inspection. Most tasks can be completed while the unit remains in service. Plan approximately 60–90 minutes per unit.
+
+    <Steps>
+      <Step title="Check Condenser Water Temperatures">
+        Record the condenser water inlet and outlet temperatures at the unit connections. The design temperature differential (ΔT) across the condenser is typically **5–6 °C** — verify your system design documentation for the exact value. A rising ΔT at the same load suggests reduced water flow or increased load; a falling ΔT suggests condenser coil fouling (scale on waterside reduces heat transfer and compresses the temperature spread). Log both readings against the ambient room temperature and system load.
+      </Step>
+
+      <Step title="Inspect Condenser Water Connections for Leaks">
+        Visually inspect all condenser water pipework connections, flexible hoses, valve glands, and flanged joints at and near the unit. Mark and date any drips found. Even minor leaks waste treated water, increase chemical costs, and can cause corrosion on nearby electrical components. Arrange prompt repair for any active leak.
+      </Step>
+
+      <Step title="Check Refrigerant Pressures">
+        Using the service gauges or the unit's digital controller display, record suction pressure and discharge pressure. Convert to saturation temperatures using the manufacturer's P-T chart for the installed refrigerant (commonly R-410A, R-407C, or R-32). Compare saturation temperatures to actual evaporating and condensing conditions. Suction pressure below design indicates low charge, restricted expansion device, or dirty evaporator coil. High discharge pressure suggests condenser fouling or high condenser water temperature.
+      </Step>
+
+      <Step title="Verify Supply Air and Return Air Temperatures">
+        Measure and record the air temperature entering the unit (return air) and leaving the unit (supply air) at the unit's air inlet and outlet grilles using a calibrated thermometer. Calculate the air-side ΔT; for a typical direct expansion system the design sensible ΔT is 8–14 °C depending on application. A reducing air-side ΔT at the same setpoint indicates reduced airflow (dirty filter, failing fan) or a degrading refrigerant circuit.
+      </Step>
+
+      <Step title="Clean or Replace Air Filters">
+        Remove and inspect the return air filter. If using a pressure differential gauge across the filter housing, record the reading — replace the filter when pressure drop exceeds the manufacturer's recommended limit (typically 100–150 Pa for standard panel filters). Visually inspect for physical damage, bypass gaps around the filter frame, or microbial growth. Clean washable filters with low-pressure water and allow to dry fully before reinstalling; dispose of disposable filters.
+        
+        <Tip>
+          In dusty environments — such as warehouses, manufacturing facilities, or buildings undergoing nearby construction — increase filter inspection frequency to every two weeks. A blocked filter starves the evaporator coil of airflow, causes ice formation, and can trip the unit on low-pressure alarm within hours of loading.
+        </Tip>
+      </Step>
+
+      <Step title="Check Fan Motor Amp Draw">
+        Using a calibrated clamp meter, record the running current on all three phases of the supply air fan motor. Compare to the nameplate full-load amperage (FLA). Current significantly above FLA indicates a mechanical restriction (bearing failure, blocked discharge), motor deterioration, or supply voltage issue. Record all three phases — imbalance greater than 2% between phases requires investigation of the power supply.
+      </Step>
+
+      <Step title="Inspect Fan Blades for Damage or Imbalance">
+        Visually inspect the supply air fan wheel or blades (with power isolated for close inspection, or observing through the access panel during operation) for bent blades, accumulated debris, or erosion. A fan operating out of balance will exhibit elevated vibration and increased bearing wear. If a new vibration is noticed since the previous visit, check the fan wheel for debris build-up on the blades, which is a common cause of sudden imbalance.
+      </Step>
+
+      <Step title="Inspect the Control Panel">
+        Review the unit controller for active alarms and historical fault codes. Log all fault codes, including those that auto-cleared, in the service record. Verify that operating setpoints — room temperature setpoint, supply air setpoint, demand-limit settings — match the commissioned values. Check that the time schedule and any network communication status (if BMS-integrated) are functioning correctly.
+      </Step>
+
+      <Step title="Verify Condenser Water Flow">
+        Confirm adequate condenser water flow through the unit using the flow indicator sight glass (if fitted) or by calculating flow rate from the condenser water ΔT and unit capacity. Alternatively, measure the pressure differential across the unit's condenser coil connections and compare to the manufacturer's design pressure drop at rated flow. Low flow causes elevated condensing pressure, reduced efficiency, and premature compressor failure.
+      </Step>
+
+      <Step title="Check Compressor Oil Level">
+        Where the unit's compressor is equipped with a sight glass (common on scroll and semi-hermetic compressors in larger packaged units), observe the oil level at steady-state operation. Level should be visible in the middle of the sight glass. A very low or zero oil level reading requires immediate investigation — check the oil separator and return lines, and check for oil dilution by refrigerant due to liquid floodback.
+      </Step>
+
+      <Step title="Lubricate Supply Air Fan Bearings">
+        On units fitted with grease-lubricated (non-sealed) fan bearings, apply the manufacturer's specified grease type in the correct quantity. Consult the bearing manufacturer's data for the relubrication interval at operating speed and temperature. Avoid over-greasing, which can cause bearing overheating. Units with permanently sealed bearings require no lubrication but should be checked for running temperature and vibration.
+      </Step>
+    </Steps>
+
+  </Tab>
+
+  <Tab title="Annual">
+
+    Annual maintenance requires the unit to be taken fully offline and isolated electrically and from the condenser water circuit. Allocate a planned maintenance window of four to eight hours. Some tasks — particularly refrigerant work — must be performed by a qualified refrigerant technician.
+
+    <Steps>
+      <Step title="Clean and Descale the Condenser Coil">
+        Isolate the condenser water circuit at the unit's service valves. Flush the condenser coil with clean water to remove loose debris. Connect a recirculating descaling pump and circulate an approved descaling chemical (citric acid-based or a proprietary product compatible with the coil material — confirm with the manufacturer). Follow the chemical supplier's dwell time and concentration instructions. Flush thoroughly with clean water until the pH of the flush effluent matches the incoming water supply. Inspect for any signs of tube pitting or corrosion; photograph and document findings.
+      </Step>
+
+      <Step title="Inspect and Clean the Evaporator Coil">
+        Remove the unit access panels to expose the evaporator coil. Inspect for dust accumulation, microbial growth (black or green deposits), and physical damage to fins. Clean using a suitable coil cleaner applied with a low-pressure sprayer; work from the clean air side towards the dirty side to flush debris out. After cleaning, apply a biocide treatment to inhibit mould and bacterial growth. Inspect the coil for bent fins and straighten with a fin comb as needed.
+      </Step>
+
+      <Step title="Replace Air Filters">
+        Replace all return air filters with new filters of the correct grade and size regardless of their visual condition. Annual replacement ensures consistent airflow resistance and removes any accumulated allergens or microbial contamination that washing alone may not eliminate. Check filter frame seals and housings for air bypass gaps and seal with self-adhesive foam strip if necessary.
+      </Step>
+
+      <Step title="Perform Refrigerant Leak Test">
+        Using a calibrated electronic refrigerant leak detector, systematically test all brazed joints on the refrigerant circuit, all service valve stems, all Schrader port caps, and the compressor shaft seal if applicable. Access behind panels and under the unit base if required. The detection threshold should be set to the lower of the detector's capability and your local regulatory requirement (typically 5 g/year threshold under F-Gas Regulation). Record all results. Repair any leaks found and retest before closing up the unit.
+      </Step>
+
+      <Step title="Inspect and Tighten All Electrical Connections">
+        With the unit fully isolated and locked out, open the main electrical panel and control panel. Inspect every terminal block, contactor lug, and bus connection for signs of overheating, discolouration, or mechanical loosening. Re-torque all power-circuit connections to the manufacturer's specified values. Inspect contactor main contacts for pitting or arc erosion — replace any contactor where contact material has been lost or deep pitting is visible. Check overload relay settings against motor nameplate FLA and adjust if required.
+      </Step>
+
+      <Step title="Calibrate Room Thermostat and Unit Sensors">
+        Using a NIST-traceable reference thermometer, measure the actual room temperature at the thermostat sensing element and compare to the displayed value. Offset or recalibrate the thermostat as permitted by the manufacturer's instructions. Similarly, calibrate the unit's supply air temperature sensor, return air temperature sensor, and water temperature sensors against the reference. Document pre- and post-calibration values. A thermostat reading 1–2 °C high will cause a server room to be chronically underserved in cooling.
+      </Step>
+
+      <Step title="Megger Test Compressor and Fan Motors">
+        With all motor leads disconnected at the terminal block, perform insulation resistance testing using a 500 V or 1000 V insulation resistance tester. Test phase-to-phase and phase-to-earth on both the compressor motor and the supply air fan motor. Minimum acceptable value for a serviceable motor is 100 MΩ; values between 1 MΩ and 10 MΩ indicate a motor requiring close monitoring; values below 1 MΩ indicate a motor that should be replaced before the next operating season. Record all results and trend over previous annual visits.
+      </Step>
+
+      <Step title="Test All Safety Controls">
+        Individually test and verify the correct trip setpoint and auto-reset or manual-reset behaviour of each safety control:
+        - **High-pressure cutout:** Trip setpoint per refrigerant and manufacturer specification (e.g., 4,150 kPa for R-410A).
+        - **Low-pressure cutout:** Verify setpoint prevents evaporator freeze.
+        - **Freeze protection thermostat:** Confirm trips at 3–4 °C on the evaporator coil or leaving water temperature as applicable.
+        - **Condenser water flow switch:** Confirm unit shuts down cleanly on simulated low-flow condition.
+
+        Log all test results with measured trip values and pass/fail against required setpoints.
+      </Step>
+
+      <Step title="Check Belt Drive (If Applicable)">
+        On units equipped with belt-drive supply air fans, inspect each belt for cracking, fraying, glazing, or stretch. Check belt tension using a belt tension gauge — compare to the manufacturer's deflection specification (typically 12–16 mm deflection per 1 m of span under a specified force). Check drive and driven sheave alignment using a straightedge across the sheave faces. Replace any belt showing visible wear or tension below specification. Belts should always be replaced as a complete matched set on multi-belt drives.
+      </Step>
+
+      <Step title="Flush Drain Pan and Condensate Drain Line">
+        Flush the condensate drain pan with clean water and inspect for sludge, scale, or biological growth. Scrub if needed with a mild disinfectant solution. Verify that the condensate drain line flows freely by pouring water into the pan and confirming it drains within 30 seconds. Clear any blockage with a drain clearing tool or compressed air. Place an algaecide slow-release tablet in the drain pan to inhibit biological growth over the coming season.
+      </Step>
+
+      <Step title="Review and Update Service Log">
+        Compile all readings, calibration data, test results, parts replaced, and observations into a formal service report. Update the unit's lifetime service log. Provide the facility manager with a written summary of findings and any outstanding recommendations. Flag items such as coil corrosion, borderline motor insulation values, or persistent water quality issues as items requiring attention before the next service.
+      </Step>
+    </Steps>
+
+  </Tab>
+</Tabs>
+
+---
+
+## Performance Benchmarks
+
+<CardGroup cols={2}>
+  <Card title="Condenser Water ΔT" icon="temperature-half">
+    Design differential across condenser is typically **5–6 °C**. Monitor monthly — a drifting ΔT is one of the earliest indicators of coil fouling or flow issues.
+  </Card>
+  <Card title="Air-Side ΔT" icon="wind">
+    Supply-to-return air temperature difference should be **8–14 °C** at design load. Low ΔT at setpoint suggests refrigerant, airflow, or sensor issues.
+  </Card>
+  <Card title="Filter Pressure Drop" icon="gauge">
+    Replace filters when measured pressure drop exceeds **100–150 Pa** across the filter bank. Do not allow pressure drop to exceed 200 Pa in continuous operation.
+  </Card>
+  <Card title="Insulation Resistance" icon="bolt">
+    Compressor and fan motor insulation resistance should be **> 100 MΩ** at 500 V DC. Values below 10 MΩ require investigation and monitoring.
+  </Card>
+</CardGroup>
+
+---
+
+## Troubleshooting Common Issues
+
+<Accordion title="Unit Trips on High-Pressure Alarm">
+  Check condenser water supply temperature — high entering water temperature is the most common cause. Verify condenser water flow rate is correct. Inspect and clean the condenser coil if scale is suspected. Confirm there is no refrigerant overcharge. Check the high-pressure cutout setpoint has not drifted.
+</Accordion>
+
+<Accordion title="Room Temperature Drifting Above Setpoint">
+  Check air filter condition — a blocked filter is the most frequent cause of reduced cooling capacity. Verify the supply air fan is running at correct speed. Check refrigerant pressures for signs of low charge. Confirm the thermostat sensor is correctly located and calibrated. Verify condenser water supply temperature is within design.
+</Accordion>
+
+<Accordion title="Ice on Evaporator Coil">
+  Ice formation indicates insufficient airflow across the coil or a low refrigerant charge. First, check and replace the air filter. Verify all supply and return air grilles are unobstructed. If airflow is adequate, check suction pressure and superheat for signs of low charge. Do not chip ice off the coil — isolate the unit and allow it to defrost naturally before investigating.
+</Accordion>
+
+<Accordion title="Water Leak from Unit Base">
+  Most water leaks from the unit base originate from a blocked condensate drain pan. Remove the drain pan cover and check for blockage at the drain outlet. Flush the drain line. If the pan is overflowing, also check that the unit is installed level — slight reverse slope on the drain pan prevents correct drainage. Check condenser water connections for leaks that may be dripping down to the base.
+</Accordion>

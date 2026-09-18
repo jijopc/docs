@@ -1,0 +1,382 @@
+---
+title: Compressor Preventive Maintenance and Servicing
+sidebarTitle: Compressor
+description: Learn how to maintain reciprocating, scroll, screw, and centrifugal HVAC/R compressors with monthly, quarterly, and annual service procedures.
+---
+
+The compressor is the heart of any refrigeration or air conditioning system — it raises refrigerant vapour pressure, drives the refrigerant circuit, and ultimately determines system capacity and efficiency. Because compressor replacement is one of the most expensive repairs in HVAC/R, a disciplined preventive maintenance programme pays for itself many times over. This page covers the four compressor types you will encounter in commercial and industrial plant — reciprocating, scroll, screw, and centrifugal — across all three construction classes (hermetic, semi-hermetic, and open-drive) and lays out exactly what to check, when to check it, and what action to take.
+
+<Note>
+  Maintain a dedicated compressor run-hour log for every machine on site. Record start/stop times, cumulative hours, any anomalies, and all maintenance performed. Most OEM warranty and overhaul schedules are hours-based rather than calendar-based, and an accurate log is your only reliable trigger for major work.
+</Note>
+
+## Compressor Types Overview
+
+HVAC/R systems use four principal compressor technologies, each suited to a different capacity range and application:
+
+<CardGroup cols={2}>
+  <Card title="Reciprocating" icon="arrow-up-down">
+    Positive-displacement piston-and-cylinder design. Common in small-to-medium commercial refrigeration and unitary equipment (1–150 tons). Available in hermetic, semi-hermetic, and open-drive configurations.
+  </Card>
+  <Card title="Scroll" icon="rotate">
+    Positive-displacement orbital-scroll design. Industry standard for residential and light-commercial split systems and packaged units (1–60 tons). Almost exclusively hermetic and sealed — not field-serviceable internally.
+  </Card>
+  <Card title="Screw" icon="gear">
+    Positive-displacement twin-rotor helical design. Dominates medium-to-large commercial refrigeration and chiller plant (50–1,500 tons). Available in semi-hermetic and open-drive configurations, often with VFD capacity control.
+  </Card>
+  <Card title="Centrifugal" icon="circle-notch">
+    Dynamic (kinetic) compression via impeller(s). Used in large central chiller plant (200–10,000+ tons). Requires a dedicated lube-oil system and purge unit on low-pressure refrigerant designs.
+  </Card>
+</CardGroup>
+
+**Construction classes at a glance:**
+
+| Class | Motor location | Field-serviceable internals | Typical application |
+|---|---|---|---|
+| Hermetic | Sealed inside refrigerant shell | No | Residential / light-commercial |
+| Semi-hermetic | Bolted inside refrigerant shell | Yes (valve plate, pistons, motor) | Commercial / industrial |
+| Open-drive | External motor, shaft seal | Yes (full access) | Industrial / ammonia |
+
+---
+
+## Monthly Checks — All Compressor Types
+
+Perform these checks every month regardless of compressor technology. Record all values on your maintenance log and trend them over time — changes in readings are often more significant than the absolute values.
+
+<Steps>
+  <Step title="Record Operating Pressures and Temperatures">
+    Read and log suction pressure, discharge pressure, suction line temperature, and discharge line temperature at the compressor service ports while the system is running at stable load. Calculate the **compression ratio**:
+
+    ```
+    Compression Ratio = Absolute Discharge Pressure ÷ Absolute Suction Pressure
+    ```
+
+    Convert gauge readings to absolute values (add atmospheric pressure, typically 14.7 psia / 1.013 bar). Typical acceptable compression ratios range from 2:1 to 7:1 depending on refrigerant and application. Ratios above 7:1 indicate excessive lift, abnormal conditions, or wrong refrigerant charge.
+  </Step>
+
+  <Step title="Check Phase Amperage and Balance">
+    Clamp-meter each of the three power phases at the compressor contactor while the compressor is running at full load. All three phase currents must be within **±5 % of each other**. Phase imbalance beyond this threshold causes motor overheating and significantly shortens winding life. Compare readings against the nameplate Full Load Amps (FLA). Current persistently above FLA indicates an overloaded or mechanically tight compressor.
+  </Step>
+
+  <Step title="Check Oil Level (Semi-Hermetic and Open-Drive)">
+    Observe the crankcase sight glass with the compressor running. Oil level should be visible in the middle to upper third of the sight glass. Foaming oil indicates refrigerant dissolved in the oil (refrigerant migration or liquid flood-back) — investigate root cause before continuing operation. Discoloured (dark brown or black) oil indicates thermal breakdown or contamination and should be sampled for analysis.
+  </Step>
+
+  <Step title="Listen for Abnormal Noise">
+    With the unit running, listen carefully at the compressor body. Use a mechanic's stethoscope or a screwdriver shaft against the housing if needed:
+
+    - **Knocking or banging** — liquid slugging (liquid refrigerant or oil entering the cylinder/scroll pocket). Shut down immediately and investigate flood-back.
+    - **Hissing** — internal bypass across valves or seals, indicating worn valve assemblies or a failed bypass solenoid.
+    - **Rattling or grinding** — worn bearings, loose mounting hardware, or worn internal parts.
+
+    Any new or changed noise warrants investigation before the next scheduled service.
+  </Step>
+
+  <Step title="Verify Crankcase Heater Operation">
+    Touch the crankcase heater band or belly-band while the compressor is stopped (do not check while running — surface temperatures are misleading under normal operating heat). It must be **warm to the touch**, confirming it is energised and preventing refrigerant migration into the oil sump overnight or during extended shutdown.
+
+    <Warning>
+      Never start a compressor that has been shut down for more than four hours unless you can confirm the crankcase heater has been continuously energised. Refrigerant migration into cold oil creates a liquid/oil mix; on startup this mixture flashes violently, causing liquid slugging, broken valve reeds, bent connecting rods, and catastrophic compressor failure. If crankcase heater status is uncertain, energise the heater only (without starting the compressor) for a minimum of 12 hours before startup.
+    </Warning>
+  </Step>
+
+  <Step title="Check Oil Pressure Differential (Semi-Hermetic)">
+    On compressors with an oil pressure safety switch (OPSS), read both the crankcase (suction) pressure and the oil pump discharge pressure. Net oil pressure (oil pump discharge minus crankcase pressure) must meet OEM specification — typically **25–45 psid (1.7–3.1 bar differential)**. A low oil pressure alarm should trip the compressor within 90–120 seconds if the differential falls below the setpoint.
+  </Step>
+
+  <Step title="Inspect Suction and Discharge Lines">
+    - **Suction line at the compressor:** should be cool and dry with light condensation. Frost or ice indicates liquid flood-back or excessive superheat loss — investigate TEV setting, distributor, or evaporator airflow.
+    - **Discharge line at the compressor:** should be hot (typically 150–220 °F / 65–105 °C depending on refrigerant and compression ratio). Excessively high discharge temperature (above 225 °F / 107 °C) indicates low suction superheat, low charge, or high compression ratio. Use a contact thermometer or non-contact IR gun to verify.
+  </Step>
+</Steps>
+
+---
+
+## Compressor-Specific Maintenance
+
+<Tabs>
+  <Tab title="Reciprocating">
+    ### Quarterly — Reciprocating Compressor
+
+    <Steps>
+      <Step title="Inspect Valve Plate (Semi-Hermetic)">
+        Remove the cylinder head(s) on accessible semi-hermetic compressors. Inspect the valve plate assembly for:
+
+        - **Broken or fractured valve reeds** — replace the complete valve plate assembly; never reuse individual broken reeds.
+        - **Warped or distorted valve plate** — replace if flatness is outside OEM tolerance (typically 0.002 in / 0.05 mm).
+        - **Carbon deposits or varnish** — clean with approved refrigeration solvent; investigate root cause (oil breakdown, overheating).
+
+        **Performance test:** With the compressor stopped and service valves closed, record suction and discharge pressures. Allow the system to sit for 15 minutes and re-read. Rapid pressure equalisation across the compressor (without opening any valves) indicates leaking suction or discharge valves.
+      </Step>
+
+      <Step title="Assess Crankcase Oil Condition">
+        Drain a small oil sample from the crankcase drain port into a clean glass vial:
+
+        - **Colour:** Bright amber = good. Light yellow = new/diluted with refrigerant. Dark brown/black = thermally degraded — change oil.
+        - **Foaming in sight glass:** Refrigerant dissolved in oil — check for migration, flood-back, or low superheat.
+        - **Acidity:** Test with refrigeration oil acid test kit. If the Total Acid Number (TAN) exceeds **0.05 mg KOH/g**, change the oil immediately and install a new filter-drier in the liquid line to remove residual acid.
+      </Step>
+
+      <Step title="Inspect Mounting and Anti-Vibration Isolators">
+        Check all compressor hold-down bolts and spring or rubber anti-vibration mounts. Rubber isolators that are hardened, cracked, or collapsed no longer attenuate vibration effectively, accelerating structural fatigue in refrigerant pipework and electrical connections. Replace any isolator showing visible deterioration. Torque hold-down bolts to OEM specification.
+      </Step>
+
+      <Step title="Check Connecting Rod and Piston Clearances (Major Overhaul Only)">
+        During a full strip-down overhaul, measure connecting rod big-end bearing clearances with Plastigauge and compare to OEM tolerances. Inspect piston rings for wear and cylinder walls for scoring. Document all measurements. This work is typically performed at OEM-specified hour intervals or upon evidence of internal wear.
+      </Step>
+    </Steps>
+
+    ### Annual — Reciprocating Compressor
+
+    <Steps>
+      <Step title="Change Crankcase Oil">
+        Change the compressor oil every 12 months or per OEM interval, whichever comes first. Use only the oil type and viscosity specified by the OEM for the refrigerant in use (e.g., alkylbenzene for R-22, POE for HFC refrigerants, PAG where specified). Flush the crankcase if the old oil was heavily contaminated.
+      </Step>
+
+      <Step title="Acid Test the New Oil Sample">
+        After approximately 100 operating hours on the fresh charge, draw a new sample and perform an acid test. TAN must remain below **0.05 mg KOH/g**. A rapid rise in acid level indicates a moisture or contamination source that must be traced and eliminated.
+      </Step>
+
+      <Step title="Megger Test Motor Windings">
+        With power isolated and the compressor at ambient temperature, perform an insulation resistance test using a 500 V DC megohmmeter between each winding and ground. Record results in the run-hour log. Minimum acceptable insulation resistance is typically **20 MΩ** for a healthy winding; readings below 2 MΩ indicate winding deterioration requiring investigation. Compare to previous annual readings — a downward trend is as important as the absolute value.
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Scroll">
+    ### Annual — Scroll Compressor
+
+    Scroll compressors are hermetically sealed at the factory; the internal scroll sets, motor, and bearings are not accessible in the field. All annual work focuses on external checks, electrical integrity, and system-side conditions.
+
+    <Warning>
+      A three-phase scroll compressor will run in reverse rotation if any two supply phases are swapped. Reverse rotation pumps refrigerant in the wrong direction and builds no discharge pressure — it also causes immediate and irreversible damage to the scroll set within seconds of startup. After any electrical work on the supply to a scroll compressor, **always verify correct rotation** before commissioning. On a correctly rotating unit, suction pressure drops and discharge pressure rises within 3–5 seconds of startup. If pressure difference does not build, shut down immediately and swap two phases at the contactor or disconnect.
+    </Warning>
+
+    <Steps>
+      <Step title="Megger Test Motor Windings">
+        Isolate power and perform an insulation resistance test at 500 V DC between each terminal and ground (and between terminals on non-hermetic accessible types). Record and trend results. Values below 20 MΩ warrant investigation; below 2 MΩ indicate the compressor should be replaced before winding failure causes an electrical burnout and system contamination.
+      </Step>
+
+      <Step title="Test and Replace Run Capacitor (Single-Phase Units)">
+        Discharge the run capacitor safely before measuring. Use a dedicated capacitor tester (not a standard multimeter) to measure actual capacitance in µF. The measured value should be within **±6 % of the nameplate rating**. A weak capacitor causes hard starting, elevated amp draw, and premature motor failure. Replace capacitors outside tolerance — they are inexpensive insurance compared to a compressor.
+      </Step>
+
+      <Step title="Verify Correct Rotation (Three-Phase)">
+        Confirm rotation at every annual service and after any electrical work. Use a phase rotation meter at the incoming terminals to verify phase sequence matches the compressor nameplate requirement. Confirm operationally: suction pressure must fall and discharge pressure must rise within seconds of startup.
+      </Step>
+
+      <Step title="Check Discharge Check Valve Operation">
+        The internal or external discharge check valve prevents high-pressure gas from back-flowing through the scroll set on shutdown (which causes reverse spin and noise). With the system shut down, listen at the compressor — a brief hiss of equalising pressure immediately on shutdown is normal, but sustained reverse spin or loud rattling on shutdown indicates a failed check valve. Replace as required.
+      </Step>
+
+      <Step title="Inspect Brazed Refrigerant Connections">
+        Inspect all brazed joints at the compressor suction and discharge stubs with an electronic leak detector calibrated for the system refrigerant. Scroll compressors are sensitive to loss of refrigerant charge — even a small leak causing suction superheat to rise excessively will overheat the motor windings (which are cooled by suction gas in hermetic designs).
+      </Step>
+
+      <Step title="Confirm Crankcase Heater Operation">
+        Verify the crankcase heater is energised whenever the compressor is off. On scroll compressors, the belly-band heater prevents refrigerant from migrating into and dissolving in the oil, which causes foaming and loss of lubrication on startup. Check that the heater control circuit (typically wired through the contactor auxiliary contact) de-energises the heater only while the compressor runs.
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Screw">
+    ### Quarterly — Screw Compressor
+
+    <Steps>
+      <Step title="Check Oil Level and Condition">
+        With the unit running at stable load, observe the oil level sight glass on the oil separator / oil reservoir. Level should be in the acceptable zone marked on the glass. Low oil level indicates a leak or oil carry-over into the refrigerant circuit. Inspect the oil separator element and downstream circuit for signs of oil accumulation.
+      </Step>
+
+      <Step title="Inspect Oil Filter Differential Pressure">
+        Read the differential pressure indicator across the oil filter. When **ΔP exceeds 1.0 bar (14.5 psi)**, replace the oil filter element — do not wait for the scheduled annual change. A blocked oil filter starves bearing lubrication and will trigger an oil pressure alarm or, in worst cases, bearing failure.
+      </Step>
+
+      <Step title="Check Oil Cooler Operation and Cleanliness">
+        - **Air-cooled oil cooler:** inspect the fin coil for fouling, dust, or debris. Clean with low-pressure compressed air (blow from clean side outward) or approved coil cleaner if fouled.
+        - **Water-cooled oil cooler (brazed plate or shell-and-tube):** verify cooling water flow and return temperature. Check for scaling on the water side if water quality is not treated; high oil temperatures indicate fouling.
+
+        Oil temperature at the injection point must remain within OEM limits (typically 40–60 °C / 104–140 °F). High oil injection temperature reduces oil viscosity and bearing film strength.
+      </Step>
+
+      <Step title="Verify Vi Slide Valve Position and Capacity Control">
+        The Vi (built-in volume ratio) slide valve adjusts the compressor's internal compression ratio to match system conditions. Verify the slide valve position indicator corresponds to the expected position for the current system load. Erratic or non-responsive slide valve movement indicates actuator wear, control signal issues, or hydraulic (oil-pressure) actuator faults. Log the slide valve position alongside system operating conditions at each quarterly visit.
+      </Step>
+    </Steps>
+
+    ### Annual — Screw Compressor
+
+    <Steps>
+      <Step title="Oil Analysis">
+        Send a 100 ml oil sample to an approved laboratory for full analysis:
+
+        | Parameter | Action limit |
+        |---|---|
+        | Viscosity (at 40 °C) | ±15 % of new oil spec |
+        | Total Acid Number (TAN) | > 0.05 mg KOH/g — change oil |
+        | Moisture content | > 50 ppm — change oil and investigate source |
+        | Metal particles (Fe, Cu, Al) | Elevated levels — inspect bearings and rotors |
+
+        Change oil based on analysis results, not purely on calendar interval.
+      </Step>
+
+      <Step title="Replace Oil Filter and Oil Separator Element">
+        Replace the oil filter cartridge and the oil separator coalescing element annually regardless of differential pressure readings. The separator element controls oil carry-over into the refrigerant circuit — a saturated element passes oil to the evaporator, reducing heat transfer and fouling the system.
+      </Step>
+
+      <Step title="Inspect Slide Valve Actuator and Capacity Control System">
+        Manually exercise the capacity control (slide valve) through its full range using the controller diagnostic mode. Verify full travel, correct response to load signals, and return to minimum position on shutdown. Inspect actuator seals and hydraulic connections for weeping oil.
+      </Step>
+
+      <Step title="Full Electrical Test and VFD Check">
+        Perform a 1000 V DC megger test on all motor windings. Record and trend results. If the compressor is fitted with a **Variable Frequency Drive (VFD)**:
+
+        - Download and review the fault/event log — clear resolved faults and investigate recurring codes.
+        - Check VFD cooling fan operation and heat-sink cleanliness.
+        - Verify DC bus voltage, input/output voltage balance, and output frequency accuracy.
+        - Check all VFD power and control connections for tightness and signs of heat damage.
+      </Step>
+    </Steps>
+
+    ### Major Overhaul — Screw Compressor
+
+    OEM-specified overhaul intervals are typically **20,000–40,000 running hours** depending on make, model, and application. At this interval:
+
+    - **Rotor lobe inspection:** measure rotor profile wear and clearances using feeler gauges or laser measurement. Replace rotors if clearances exceed OEM limits — worn rotors reduce volumetric efficiency and increase specific power consumption.
+    - **Bearing replacement:** replace all rolling-element or journal bearings regardless of apparent condition. Log replacement with new bearings and repack as specified.
+    - **Shaft seal replacement:** replace the mechanical shaft seal assembly (open-drive types) or inspect and replace labyrinth seals on semi-hermetic designs.
+    - **Full oil system service:** clean oil reservoir, replace all seals and gaskets, pressure-test oil circuit.
+  </Tab>
+
+  <Tab title="Centrifugal">
+    ### Annual — Centrifugal Compressor
+
+    Centrifugal compressors in large chiller plant operate under different failure modes than positive-displacement types — the primary concerns are lubrication integrity, aerodynamic performance, shaft dynamics, and (on low-pressure refrigerant machines) non-condensable gas management.
+
+    <Steps>
+      <Step title="Service the Lube Oil System">
+        Centrifugal compressors rely on a pressurised lube-oil system (entirely separate from the refrigerant circuit) to lubricate bearings and the gear increaser (on gear-driven models). Annually:
+
+        - Change the lube oil per OEM specification (typically turbine-grade oil ISO VG 32 or 68).
+        - Replace the oil filter element.
+        - Check and clean the oil cooler (water-cooled plate type typical).
+        - Verify oil pump operation, oil pressure setpoint, and low-oil-pressure trip function.
+        - Check the pre-lube pump (if fitted) — this pump runs before and after compressor operation to ensure bearing lubrication during run-up and coast-down.
+      </Step>
+
+      <Step title="Inspect Inlet Guide Vanes (IGVs)">
+        IGVs modulate compressor capacity by adjusting the angle of incoming refrigerant vapour before the impeller. Inspect each vane for:
+
+        - **Physical condition:** cracks, erosion, or fouling deposits (particularly on water-contaminated systems).
+        - **Range of motion:** command the IGVs from 0 % to 100 % open via the controller and verify smooth, full travel with no sticking or hunting.
+        - **Calibration:** confirm vane position feedback (potentiometer or encoder) matches commanded position at 0 %, 50 %, and 100 %. Recalibrate if deviation exceeds ±2 %.
+        - **Actuator and linkage:** inspect the actuator motor, shaft linkages, and pivot bushings for wear. Lubricate pivot points per OEM specification.
+      </Step>
+
+      <Step title="Check Purge Unit Operation (Low-Pressure Refrigerant Systems)">
+        Chillers operating with low-pressure refrigerants (R-11, R-113, R-123, R-245fa) run at sub-atmospheric evaporator pressures, making them prone to **air and moisture ingestion** through leaks. The high-efficiency purge unit must be operational at all times to remove non-condensables.
+
+        - Check purge unit refrigerant charge and operation.
+        - Review the purge unit runtime log — excessive purge runtime (more than a few minutes per day) indicates a refrigerant-side leak that must be located and repaired.
+        - Check the moisture indicator in the purge unit sight glass.
+        - Ensure the purge unit discharge piping (to atmosphere or recovery) is unobstructed.
+      </Step>
+
+      <Step title="Inspect Shaft Seals">
+        On open-drive or accessible semi-hermetic centrifugal compressors, inspect shaft seal faces for wear, scoring, and evidence of refrigerant or oil leakage. Replace seal faces and O-rings per OEM schedule. Mechanical seal condition has a direct impact on refrigerant loss and oil contamination.
+      </Step>
+
+      <Step title="Conduct Vibration Analysis">
+        Mount calibrated accelerometers at the OEM-specified measurement points on the compressor, motor, and gearbox (if applicable). Record vibration velocity (mm/s RMS) and acceleration spectra across the relevant frequency range. Compare readings to:
+
+        - The baseline spectrum recorded at commissioning or last annual service.
+        - ISO 10816 / ISO 20816 vibration severity guidelines for the machine class.
+
+        An increase in overall vibration level or the appearance of new spectral peaks indicates bearing wear, rotor imbalance, or structural looseness. Trend analysis over successive annual readings is the most reliable predictor of developing faults.
+      </Step>
+
+      <Step title="Megger Test Motor Stator">
+        With power isolated, perform an insulation resistance test at 1000 V DC (or per OEM specification for high-voltage motors) between each phase winding and ground. Record all readings. For motors above 1 kV, calculate the **Polarisation Index (PI)** — the ratio of the 10-minute reading to the 1-minute reading. A PI below 2.0 indicates moisture or degraded insulation and warrants further investigation (dielectric absorption testing, visual inspection).
+      </Step>
+
+      <Step title="Check Motor Cooling Water Flow (Water-Cooled Motor)">
+        On hermetic centrifugal chillers with water-cooled motor stators, verify cooling water supply temperature, flow rate, and return temperature are within OEM specification. Inspect water-side connections and heat-transfer surfaces for scaling or fouling. Confirm flow-proving switch operation.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+---
+
+## Troubleshooting Common Compressor Problems
+
+<Accordion title="High Discharge Temperature">
+  **Symptoms:** Discharge line temperature exceeds OEM maximum (typically 225 °F / 107 °C); high discharge temperature alarm active.
+
+  **Causes and checks:**
+
+  - **Low refrigerant charge** — low suction pressure with high suction superheat. Check charge and inspect for leaks.
+  - **High suction superheat** — TEV/EEV not feeding enough refrigerant to the evaporator. Check bulb contact and insulation, superheat setpoint, and distributor.
+  - **High compression ratio** — high condensing pressure (dirty condenser, high ambient, non-condensables) or low suction pressure. Clean condenser coils, purge non-condensables, check condenser fan/pump operation.
+  - **Leaking discharge valves (reciprocating)** — hot gas re-compresses, raising discharge temperature without increasing discharge pressure proportionally. Perform valve performance test.
+  - **Inadequate cooling of compressor body** — on semi-hermetic compressors, ensure motor cooling refrigerant flow is unobstructed.
+</Accordion>
+
+<Accordion title="Low Suction Pressure">
+  **Symptoms:** Suction pressure reads below normal for the evaporating temperature; possible low-pressure alarm or short-cycling.
+
+  **Causes and checks:**
+
+  - **Low refrigerant charge** — check sight glass for bubbles (liquid line), measure subcooling; locate and repair leaks before adding refrigerant.
+  - **Restricted TEV / EEV** — check for ice at the valve (moisture in system), power element failure, clogged strainer, or incorrect superheat setting.
+  - **Dirty evaporator coil or reduced airflow** — inspect coil for ice build-up, dirty filters, or blocked return air. Verify fan operation.
+  - **Liquid line restriction** — blocked filter-drier (check pressure drop across drier; replace if ΔP > 2 psi / 0.14 bar).
+  - **Compressor over-capacity for load** — verify unit is correctly sized and load has not been reduced below compressor minimum.
+</Accordion>
+
+<Accordion title="Compressor Tripping on High Pressure">
+  **Symptoms:** High pressure cutout trips compressor; manual or auto-reset activates repeatedly.
+
+  **Causes and checks:**
+
+  - **Fouled or restricted condenser** — clean air-cooled condenser coils or descale water-cooled condenser. Verify condenser fan rotation and airflow.
+  - **Condenser fan or pump failure** — check motor amps, capacitor, rotation, and flow.
+  - **Non-condensable gases (air) in system** — head pressure elevated disproportionately to ambient. Check subcooling; if abnormally high subcooling with high head pressure, recover refrigerant, evacuate, and recharge.
+  - **Refrigerant overcharge** — high subcooling with high head pressure and high discharge pressure. Recover excess charge carefully.
+  - **High-pressure switch mis-calibrated or faulty** — verify switch setpoint against OEM rating; test with gauge pressure. Do not simply reset or bypass — identify root cause first.
+</Accordion>
+
+<Accordion title="Oil Pressure Alarm">
+  **Symptoms:** Oil pressure safety switch alarm; compressor may shut down within 90–120 seconds of alarm activation.
+
+  **Causes and checks:**
+
+  - **Low oil level** — check sight glass. If low, identify source: leak, carry-over into refrigerant circuit, or migration to evaporator. Do not simply top up without finding the cause.
+  - **Blocked oil filter** — check filter differential pressure; replace filter.
+  - **Oil pump failure** — with compressor stopped, check oil pump mechanically (coupled or separately driven). Inspect for worn gears or failure.
+  - **Refrigerant dilution of oil** — foamy oil in sight glass, lower-than-normal viscosity. Investigate flood-back, verify crankcase heater, check superheat settings.
+  - **Faulty oil pressure transducer or switch** — cross-check with portable gauge at oil pump outlet; calibrate or replace instrumentation if system pressure is confirmed normal.
+  - **Oil pressure switch setpoint incorrect** — verify setpoint against OEM specification.
+</Accordion>
+
+<Accordion title="Short-Cycling">
+  **Symptoms:** Compressor starts and stops frequently (fewer than 6–8 minutes between cycles); can indicate mechanical, electrical, or controls problems.
+
+  **Causes and checks:**
+
+  - **Oversized equipment for current load** — load may have reduced since installation. Consider capacity staging or VFD addition.
+  - **Low refrigerant charge** — suction pressure drops rapidly to low-pressure cutout. Check charge.
+  - **Refrigerant flood-back on startup** — low-pressure cutout trips due to rapid pressure drop when liquid enters compressor. Verify TEV/EEV operation and crankcase heater.
+  - **Thermostat or controller differential too tight** — widen the control dead-band in the system controller.
+  - **High-pressure trips on startup** — dirty condenser, failed fan, or high ambient. Address condenser issues.
+  - **Electrical fault** — check contactor, overload relay, and control circuit for intermittent faults or loose connections. Review controller fault log.
+
+  <Info>
+    Short-cycling is particularly damaging because each startup imposes high inrush current and mechanical stress on the compressor. Industry guidance is a minimum of **3–4 starts per hour maximum** for hermetic compressors, and some screw and centrifugal OEMs specify even lower limits. Repeated short-cycling without addressing the root cause will dramatically shorten compressor life.
+  </Info>
+</Accordion>
+
+---
+
+<Tip>
+  Cross-reference compressor maintenance records with chiller or system performance data (kW/ton, COP, capacity). A gradual increase in power draw with reduced capacity, even without any alarm, often signals developing compressor wear long before a fault code appears.
+</Tip>

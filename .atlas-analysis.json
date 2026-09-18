@@ -1,30 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "general",
+  "projectName": "HVAC Preventive Maintenance Guide",
+  "projectDescription": "A comprehensive preventive maintenance reference for HVAC systems including chillers, AHUs, split ACs, packaged units, refrigeration plants, condensers, and compressors.",
   "theme": "almond",
-  "name": "HVAC Preventive Maintenance Guide",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@example.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Contact Us",
-      "href": "mailto:support@example.com"
-    }
-  },
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -83,7 +64,16 @@
       }
     ]
   },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Chiller system preventive maintenance procedures",
+    "Air Handling Unit (AHU) maintenance schedules",
+    "DX split AC system maintenance tasks",
+    "Water-cooled and air-cooled packaged AC unit maintenance",
+    "Provision refrigeration plant maintenance",
+    "Condenser inspection and cleaning procedures",
+    "Compressor maintenance and servicing guidelines",
+    "Daily, monthly, and annual maintenance checklists",
+    "Safety guidelines for HVAC technicians"
+  ],
+  "publicApiSurface": []
 }
